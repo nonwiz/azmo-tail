@@ -112,16 +112,23 @@ export default function HeaderLayout() {
 
   return (
     <Popover className="relative bg-white dark:bg-cgray-800 font-sans">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className=" mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <a href="#" className="flex flex-row" >
               <span className="sr-only">Azmo</span>
               <img
                 className="h-10 w-10 sm:h-10"
-                src="/assets/logo3.png"
+                src="/assets/logo.jpg"
                 alt=""
               />
+             <img
+                className="h-10 w-10 sm:h-10"
+                src="/assets/logo_text.jpg"
+                alt=""
+              />
+
+
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">

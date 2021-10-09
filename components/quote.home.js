@@ -9,11 +9,9 @@ export default function QuoteHome() {
         </div>
         <div className="w-full mb-5">
             <p className="text-base text-gray-600 dark:text-gray-100 text-center px-5">
-                <span className="text-3xl px-3">"</span>Let Love and Kindness <br />be the motivation behind all that you do "
+                <span className="text-3xl px-3">"</span>Let Love and Kindness <br />be the motivation behind all that you do 
+ <span className="text-3xl px-3">"</span>
             </p>
-            <div className="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3">
-                ”
-            </div>
         </div>
         <div className="w-full">
             <p className="text-md text-indigo-500 font-bold text-center">
