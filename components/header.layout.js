@@ -122,7 +122,7 @@ export default function HeaderLayout() {
                 src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
               />
             <img
-                className="h-10 w-15 sm:h-10"
+                className="h-10 w-15 mt-2 -mb-2 sm:h-10"
                 src={`/assets/logo_text.png`}
               />
 
@@ -366,11 +366,10 @@ export default function HeaderLayout() {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="/assets/logo2.png"
-                    alt="Azmo"
-                  />
+                                <img
+                className="h-10 w-15 sm:h-10"
+                src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
+              />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
