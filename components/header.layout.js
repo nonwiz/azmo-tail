@@ -27,7 +27,7 @@ const posts = [
     icon: NewspaperIcon,
   },
   {
-    name: "Design",
+    name: "Collection",
     description: "Drawing, Painting, Designing, Photography",
     href: "/collection",
     icon: SparklesIcon,
@@ -78,7 +78,7 @@ const more = [
 const recentPosts = [
   { id: 1, name: "Blog: Momo my best friend", href: "#" },
   { id: 2, name: "Vlog: Dorm Room Tour", href: "#" },
-  { id: 3, name: "Design: Journal 2022", href: "#" },
+  { id: 3, name: "Collection: Journal 2022", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -219,14 +219,6 @@ export default function HeaderLayout() {
             >
               <span className="dark:text-cgray-100 dark:hover:text-rose-400">
                 Vlogs
-              </span>
-            </a>
-            <a
-              href="#"
-              className="text-base font-medium py-1 text-gray-500 hover:text-rose-400"
-            >
-              <span className="dark:text-cgray-100 dark:hover:text-rose-400">
-                Collection
               </span>
             </a>
 
@@ -372,7 +364,7 @@ export default function HeaderLayout() {
               />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+                  <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -390,7 +382,7 @@ export default function HeaderLayout() {
                         className="flex-shrink-0 h-6 w-6 text-rose-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 text-base font-medium text-gray-100">
+                      <span className="ml-3 text-base font-medium text-gray-900 dark:text-cgray-50">
                         {item.name}
                       </span>
                     </a>
@@ -406,13 +398,7 @@ export default function HeaderLayout() {
                 >
                   <span className="dark:text-cgray-100"> Vlogs </span>
                 </a>
-
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  <span className="dark:text-cgray-100"> Collection </span>
-                </a>
+            
                 {more.map((item) => (
                   <a
                     key={item.name}
