@@ -8,11 +8,8 @@ export default function QuoteHome() {
                          </a>
         </div>
         <div className="w-full mb-5">
-            <div className="text-3xl text-indigo-500 text-left leading-tight h-3">
-                “
-            </div>
             <p className="text-base text-gray-600 dark:text-gray-100 text-center px-5">
-              Let Love and Kindness <br />be the motivation behind all that you do
+                <span className="text-3xl px-3">"</span>Let Love and Kindness <br />be the motivation behind all that you do "
             </p>
             <div className="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3">
                 ”
