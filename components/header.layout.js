@@ -114,7 +114,7 @@ export default function HeaderLayout() {
     <Popover className="relative bg-white dark:bg-cgray-800 font-sans">
       <div className=" mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start lg:w-0 lg:flex-1 mx-1">
             <a href="#" className="flex flex-row" >
               <span className="sr-only">Azmo</span>
               <img
@@ -122,7 +122,7 @@ export default function HeaderLayout() {
                 src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
               />
             <img
-                className="h-10 w-15 mt-2 -mb-2 sm:h-10"
+                className="transform scale-150 translate-x-4 p-1  sm:h-10"
                 src={`/assets/logo_text.png`}
               />
 
