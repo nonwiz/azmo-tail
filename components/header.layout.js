@@ -122,7 +122,7 @@ export default function HeaderLayout() {
                 src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
               />
             <img
-                className="transform scale-150 translate-x-5 translate-y-2 p-1  sm:h-10"
+              className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
                 src={`/assets/logo_text.png`}
               />
 
