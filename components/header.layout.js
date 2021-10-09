@@ -119,8 +119,7 @@ export default function HeaderLayout() {
               <span className="sr-only">Azmo</span>
               <img
                 className="h-10 w-15 sm:h-10"
-                src="/assets/logo9.png"
-                alt=""
+                src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
               />
             </a>
           </div>
