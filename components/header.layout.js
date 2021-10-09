@@ -94,6 +94,13 @@ function isDarkMode() {
   }
 }
 
+function onDarkMode() {
+  if (typeof window !== 'undefined') 
+  if (document.documentElement.classList.contains('dark'))
+    return true;
+  return false;
+}
+
 function switchMode() {
   let counter = Number(localStorage.getItem("counter"));
   localStorage.setItem("counter", counter + 1);
@@ -119,7 +126,7 @@ export default function HeaderLayout() {
               <span className="sr-only">Azmo</span>
               <img
                 className="h-10 w-15 sm:h-10 transform scale-150"
-                src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
+                src={`/assets/logo_${onDarkMode() ? 'w' : 'b'}.png`}
               />
             <img
               className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
