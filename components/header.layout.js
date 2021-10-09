@@ -121,6 +121,12 @@ export default function HeaderLayout() {
                 className="h-10 w-15 sm:h-10"
                 src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
               />
+            <img
+                className="h-10 w-15 sm:h-10"
+                src={`/assets/logo_text.png`}
+              />
+
+
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
