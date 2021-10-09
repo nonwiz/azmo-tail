@@ -1,0 +1,230 @@
+:root {
+  --font-family: "Architects Daughter";
+  --font-family-header: "Gagalin";
+    overflow: auto !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: auto !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+ 
+
+@font-face {
+  font-family: Gagalin;
+  src: url("/assets/fonts/gagalin.ttf") format("truetype");
+}
+@font-face {
+  font-family: Gagalin;
+  font-weight: bold;
+  src: url("/assets/fonts/gagalin.ttf") format("truetype");
+}
+
+
+.gagalin {
+  font-family: Gagalin;
+}
+
+body {
+  width: 100%;
+  font-family: "Architects Daughter";
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, h6 {
+  font-family: Gagalin !important;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 0.575em;
+}
+
+a {
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.primary-bg-hover:hover a {
+  background: var(--pink) !important;
+}
+
+.header {
+  font-size: 1rem !important;
+  font-family: helvetica;
+}
+
+.primary-bg {
+  background: var(--pink) !important;
+}
+
+.azla-name {
+  font-family: Gagalin;
+  writing-mode: horizontal-tb;
+}
+
+.carousel-text {
+  font-size: 0.5rem;
+}
+
+.parallax-height {
+  min-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.parallax-1 {
+  background-image: url("/assets/bg/p1.png");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .bg-img {
+  background-image: url('/assets/collection/design/my_design.png') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .custom-title {
+ }
+
+
+
+.parallax-2 {
+  background-image: url("/assets/bg/p2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3 {
+  background-image: url("/assets/bg/p3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-momo-blog {
+  background-image: url("/assets/bg/p3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-footer {
+  background-image: url("/assets/bg/pf.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.h-gap {
+  min-height: 30vh;
+}
+
+.blog-momo {
+  padding-top: 1em;
+  background-image: url("/assets/blog/momo_my_best_friend/4_momo_pic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 50%;
+}
+
+.vlog-azla {
+  padding-top: 1em;
+  background-image: url("/assets/vlog/vlog_journey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.banner-height {
+  height: 500px;
+}
+
+.contact-btn {
+  background: var(--pink) ;
+  border-radius: 50%;
+}
+
+.contact-btn:hover {
+}
+
+@media (min-width: 700px) {
+  /* For Ipad / Tablet    */
+  .azla-name {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 0.875em;
+  }
+
+  .carousel-item > img {
+    height: 500px;
+  }
+  .carousel-text {
+    font-size: 1.2rem;
+  }
+  .stack-img {
+    transform: translate(-8vw, -30vh);
+  }
+
+  .stack-img > img {
+    height: 450px;
+  }
+
+  .parallax-height {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* For larger screen    */
+  .stack-img {
+    transform: translate(-8vw, -40vh);
+  }
+
+  .stack-img > img {
+    height: 600px;
+  }
+
+  .azla-name {
+    font-size: 3rem;
+}
+}
+
+@media screen and (max-width: 500px) {
+  /*   For phone  */
+
+  .stack-img {
+    transform: translate(-8vw, -20vh);
+  }
+
+  .banner-height {
+    height: 400px;
+  }
+}

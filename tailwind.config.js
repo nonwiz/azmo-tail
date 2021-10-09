@@ -1,12 +1,34 @@
+// tailwind.config.js
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
-    extend: {},
+    colors: {
+      // Build your palette here
+      white: colors.white,
+      gray: colors.gray,
+      bgray: colors.blueGray,
+      cgray: colors.coolGray,
+      red: colors.red,
+      blue: colors.sky,
+      orange: colors.orange,
+      yellow: colors.yellow,
+      amber: colors.amber,
+      lime: colors.lime,
+      rose: colors.rose,
+      fuchsia: colors.fuchsia,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+
+      
+    }
   },
   variants: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      textColor: ['hover'],
+    },
+  }
 }

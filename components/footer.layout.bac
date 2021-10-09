@@ -1,0 +1,110 @@
+
+export default function FooterLayout() {
+  return (
+    <>
+    <footer>
+      <div
+        className="
+          parallax-footer
+          d-flex
+          justify-content-center
+          flex-wrap
+          mt-5
+          text-center
+        "
+        id="contact"
+      >
+        <div className="m-2" style={{ padding: '1em' }}>
+          <div style={{background: '#4f5964', padding: '1em', fontSize: '1rem'}}>
+            <h6 className="text-pink gagalin mb-3">GET IN TOUCH</h6>
+            <div style={{ 'lineHeight': 0.3 }}>
+              <p className="text-pink gagalin">MAILING ADDRESS</p>
+              <p className="text-white">
+                Asia-Pacific International University, 18180
+              </p>
+              <p className="text-pink gagalin">Email Address</p>
+              <p>
+                <a src="mailto://azla@azmo.page" className="text-white"
+                  >azla@azmo.page</a
+                >
+              </p>
+            </div>
+
+            <p className="text-pink gagalin">Social Media</p>
+            <div className="just-flex flex-center" style={{marginTop: '-1em'}}>
+              <a href="https://www.facebook.com/azlasorubou/">
+                <img
+                  src="/assets/social_media/fb.png"
+                  height="30"
+                  width="30"
+                />
+              </a>
+
+              <a href="https://www.instagram.com/miss.azla/">
+                <img
+                  src="/assets/social_media/inst.png"
+                  height="30"
+                  width="30"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/azla-sorubou-172700127/">
+                <img
+                  src="/assets/social_media/linkedin.png"
+                  height="40"
+                  width="40"
+                />
+              </a>
+              <a href="https://www.pinterest.com/Azlasorubou/">
+                <img
+                  src="/assets/social_media/pint.png"
+                  src="https://cdn.glitch.com/1af90b78-6e76-4bef-9fca-5e682ce035ab%2F7.png?v=1631466239208"
+                  height="40"
+                  width="40"
+                />
+              </a>
+              <a href="https://www.tiktok.com/@miss.azla">
+                <img
+                  src="/assets/social_media/tiktok.png"
+                  height="30"
+                  width="30"
+                />
+              </a>
+
+              <a href="https://twitter.com/AzlaSorubou">
+                <img
+                  src="/assets/social_media/twi.png"
+                  height="30"
+                  width="30"
+                />
+              </a>
+              <a href="https://www.youtube.com/Azla%20sorubou">
+                <img
+                  src="/assets/social_media/yb.png"
+                  height="40"
+                  width="40"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="m-2" id="#contact">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScDuiKg399fghB-8U-ca5IoDki0o5icziheXm33eK902WWOew/viewform?embedded=true"
+            width="380"
+            height="250"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
+      <div className="text-center bg-dark text-white fs-5 ">
+        <small style={{fontSize: '1rem'}}>Copyright © 2021</small>
+        </div>
+    </footer>
+
+    </>
+  )
+}
