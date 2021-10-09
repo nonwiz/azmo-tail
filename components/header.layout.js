@@ -118,17 +118,10 @@ export default function HeaderLayout() {
             <a href="#" className="flex flex-row" >
               <span className="sr-only">Azmo</span>
               <img
-                className="h-10 w-10 sm:h-10"
-                src="/assets/logo.jpg"
+                className="h-10 w-15 sm:h-10"
+                src="/assets/logo9.png"
                 alt=""
               />
-             <img
-                className="h-10 w-10 sm:h-10"
-                src="/assets/logo_text.jpg"
-                alt=""
-              />
-
-
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">

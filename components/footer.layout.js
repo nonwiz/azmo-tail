@@ -46,7 +46,7 @@ export default function FooterLayout() {
               Asia-Pacific International Univeristy, 18180{" "}
             </p>
             <h6 className="text-rose-100 text-sm"> EMAIL ADDRESS </h6>
-            <p>
+            <p className="-mt-1">
               <a href="" className="text-white text-sm">
                 {" "}
                 azla@azmo.page{" "}

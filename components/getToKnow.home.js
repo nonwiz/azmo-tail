@@ -10,10 +10,7 @@ export default function GetToKnowHome() {
             </div>
             <div className="mb-10 md:mb-20 text-gray-600 font-light">
               <h1 className="font-black uppercase text-3xl lg:text-5xl text-indigo-700 mb-10">GET TO KNOW AZLA</h1>
-                <p>Hello, I am Azla from Sabah, Malaysia. currently, I am staying in Thailand as a full-time student. I'm majoring in Bioscience emphasize Community Public Health and Minoring in Education.</p>
-            </div>
-            <div className="mb-20 md:mb-0">
-              <button className="text-lg font-light outline-none focus:outline-none transform transition-all hover:scale-110 text-blue-500 hover:text-blue-600">Contact</button>
+                <p className="text-center">Hello, I am Azla from Sabah, Malaysia. currently, I am staying in Thailand as a full-time student. I'm majoring in Bioscience emphasize Community Public Health and Minoring in Education.</p>
             </div>
         </div>
         <div className="w-full md:w-1/2 text-center">
