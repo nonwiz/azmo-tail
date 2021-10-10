@@ -17,22 +17,6 @@ export default function RecentHome() {
       a: "#",
       img: "/assets/home/vlog_room.png",
     },
-  {
-      category: "Vlog",
-      title: "VLOG: DORM ROOM TOUR 1",
-      description:
-        "Curious how to make your dorm room to look aesthetic? Check mine!",
-      a: "#",
-      img: "/assets/home/vlog_room.png",
-    },
-{
-      category: "Vlog",
-      title: "VLOG: DORM ROOM TOUR 2",
-      description:
-        "Curious how to make your dorm room to look aesthetic? Check mine!",
-      a: "#",
-      img: "/assets/home/vlog_room.png",
-    },
   ];
 
   return (
