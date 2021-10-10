@@ -28,11 +28,11 @@ export default function Layout({ children, noContact }) {
           content="Azla, public health educator shares her journey and stories"
         />
 
-        <link rel="icon" href="/assets/logo.png" className="bg-white" />
+        <link rel="icon" href="/assets/logo.png" />
   
       </Head>
       <HeaderLayout />
-      <main className="bg-white dark:bg-wgray-600 font-mono subpixel-antialiased"> {children} </main>
+      <main className="bg-white dark:bg-wgray-600 subpixel-antialiased"> {children} </main>
       <FooterLayout />
     </>
   );

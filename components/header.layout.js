@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React, { Fragment, useState, useEffect } from "react";
+import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import {
   MenuIcon,
@@ -115,20 +116,19 @@ export default function HeaderLayout() {
       <div className=" mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1 mx-1">
-            <a
-              href="#"
-              className="flex flex-row transform md:scale-110 lg:scale-125"
-            >
-              <span className="sr-only">Azmo</span>
-              <img
-                className="h-10 w-15 sm:h-10 transform scale-150 filter dark:invert"
-                src={`/assets/logo.png`}
-              />
-              <img
-                className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
-                src={`/assets/logo_text.png`}
-              />
-            </a>
+            <Link href="/">
+              <a className="flex flex-row transform md:scale-110 lg:scale-125">
+                <span className="sr-only">Azmo</span>
+                <img
+                  className="h-10 w-15 sm:h-10 transform scale-150 filter dark:invert"
+                  src={`/assets/logo.png`}
+                />
+                <img
+                  className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
+                  src={`/assets/logo_text.png`}
+                />
+              </a>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="text-gray-400 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-200">
@@ -218,9 +218,7 @@ export default function HeaderLayout() {
               href="#"
               className="text-base py-1 font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"
             >
-              <span className="">
-                Vlogs
-              </span>
+              <span className="">Vlogs</span>
             </a>
 
             <Popover className="relative">

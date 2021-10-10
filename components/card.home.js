@@ -9,7 +9,7 @@ export default function Card({props}) {
               />
               <div className="bg-white dark:bg-rose-100 w-full p-4 ">
                 <p className="text-rose-300 dark:text-gray-600 text-md font-medium">{props.category}</p>
-                <p className="text-cgray-900 text-xl font-medium mb-2">
+                <p className="text-gray-600 text-xl mb-2 gagalin">
                   {props.title}
                 </p>
                 <p className="text-gray-400 dark:text-cgray-600 font-light text-md">
