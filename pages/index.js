@@ -8,6 +8,7 @@ import BlogHome from "../components/blog.home";
 import VlogHome from "../components/vlog.home";
 import Image from "next/image";
 import HeroHome from '../components/hero.home';
+import RecentHome from '../components/recent.home';
 
 export async function getStaticProps() {
   const basicDetail = {
@@ -52,9 +53,7 @@ export default function Home({ sliders }) {
       {/* <SliderHome sliders={sliders} /> */}
       <QuoteHome />
       <GetToKnowHome />
-      <br />
-      <BlogHome />
-      <VlogHome />
+      <RecentHome />
     </Layout>
   );
 }
