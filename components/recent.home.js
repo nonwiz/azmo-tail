@@ -26,7 +26,7 @@ export default function RecentHome() {
         {" "}
         Recent{" "}
         </h2>
-        <hr className="mt-2 mx-auto w-20"/>
+        <hr className="mt-4 mx-auto w-20 border-rose-200"/>
       </div>
       
       <div className="w-full p-12">

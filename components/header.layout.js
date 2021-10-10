@@ -131,7 +131,7 @@ export default function HeaderLayout() {
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="text-gray-400 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+            <Popover.Button className="text-gray-400 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-200">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -143,9 +143,9 @@ export default function HeaderLayout() {
                   <Popover.Button
                     className={classNames(
                       open
-                        ? "text-gray-900 text-rose-400"
-                        : "text-gray-500 dark:text-cgray-50",
-                      "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-400"
+                        ? "text-gray-700 dark:text-rose-200"
+                        : "text-gray-500 dark:text-gray-50",
+                      "group rounded-md inline-flex items-center text-base px-1 font-medium text-gray-500 hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-wgray-400 dark:focus:ring-rose-200"
                     )}
                   >
                     <span>Posts</span>
@@ -169,15 +169,15 @@ export default function HeaderLayout() {
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white dark:bg-cgray-800 px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-white dark:bg-wgray-600 px-5 py-6 sm:gap-8 sm:p-8">
                           {posts.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-bgray-500"
+                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                             >
                               <item.icon
-                                className="flex-shrink-0 h-6 w-6 text-rose-400"
+                                className="flex-shrink-0 h-6 w-6 text-wgray-400 dark:text-gray-50"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
@@ -196,10 +196,10 @@ export default function HeaderLayout() {
                             <div key={item.name} className="flow-root">
                               <a
                                 href={item.href}
-                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-wgray-200"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                  className="flex-shrink-0 h-6 w-6 text-gray-600"
                                   aria-hidden="true"
                                 />
                                 <span className="ml-3">{item.name}</span>
@@ -216,9 +216,9 @@ export default function HeaderLayout() {
 
             <a
               href="#"
-              className="text-base py-1 font-medium text-gray-500 hover:text-rose-500"
+              className="text-base py-1 font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"
             >
-              <span className="dark:text-cgray-100 dark:hover:text-rose-400">
+              <span className="">
                 Vlogs
               </span>
             </a>
@@ -229,9 +229,9 @@ export default function HeaderLayout() {
                   <Popover.Button
                     className={classNames(
                       open
-                        ? "text-gray-900 text-rose-400"
-                        : "text-gray-500 dark:text-cgray-50",
-                      "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-400"
+                        ? "text-gray-700 dark:text-rose-200"
+                        : "text-gray-500 dark:text-gray-50",
+                      "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-rose-200"
                     )}
                   >
                     <span>More</span>
@@ -255,15 +255,15 @@ export default function HeaderLayout() {
                   >
                     <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 dark:bg-cgray-800">
+                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 dark:bg-wgray-600">
                           {more.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 dark:hover:bg-cgray-500"
+                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                             >
                               <item.icon
-                                className="flex-shrink-0 h-6 w-6 text-rose-400"
+                                className="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-50"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
@@ -279,7 +279,7 @@ export default function HeaderLayout() {
                         </div>
                         <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
                           <div>
-                            <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">
+                            <h3 className="text-sm tracking-wide font-medium uppercase text-gray-600">
                               Recent Posts
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
@@ -290,7 +290,7 @@ export default function HeaderLayout() {
                                 >
                                   <a
                                     href={post.href}
-                                    className="font-medium text-gray-900 hover:text-gray-700"
+                                    className="font-medium text-gray-500 hover:text-gray-700"
                                   >
                                     {post.name}
                                   </a>
@@ -301,7 +301,7 @@ export default function HeaderLayout() {
                           <div className="mt-5 text-sm">
                             <a
                               href="#"
-                              className="font-medium text-rose-600 hover:text-rose-500"
+                              className="font-medium hover:text-gray-500 text-gray-700"
                             >
                               {" "}
                               View all posts{" "}
@@ -355,7 +355,7 @@ export default function HeaderLayout() {
           focus
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden "
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-cgray-800 ">
+          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-wgray-600 ">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div className="flex flex-row">
@@ -369,7 +369,7 @@ export default function HeaderLayout() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+                  <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-200">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -384,7 +384,7 @@ export default function HeaderLayout() {
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-bgray-500"
                     >
                       <item.icon
-                        className="flex-shrink-0 h-6 w-6 text-rose-400"
+                        className="flex-shrink-0 h-6 w-6 text-rose-100"
                         aria-hidden="true"
                       />
                       <span className="ml-3 text-base font-medium text-gray-900 dark:text-cgray-50">
@@ -417,7 +417,7 @@ export default function HeaderLayout() {
               <div>
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-400 hover:bg-rose-500"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-rose-100 hover:bg-rose-200"
                 >
                   Email
                 </a>
