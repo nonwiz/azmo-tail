@@ -1,8 +1,8 @@
 export default function GetToKnowHome() {
   return (
-    <section className="text-gray-600 body-font parallax-2 mix-blend multiply mx-4 md:mx-24 lg:mx-40 border border-gray-200 px-6 py-12 rounded-lg bg-white shadow-md dark:bg-rose-200 dark:text-gray-50 drop-shadow-xl shadow-2xl rounded-tl-3xl rounded-br-3xl ">
+    <section className="text-gray-600 body-font parallax-2 mix-blend multiply mx-4 md:mx-24 lg:mx-40 border border-gray-200 px-6 py-12 rounded-lg bg-white shadow-md dark:bg-rose-100 dark:text-gray-50 drop-shadow-xl shadow-2xl rounded-tl-3xl rounded-br-3xl ">
       <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-4/5 lg:pr-24 md:pr-16 flex flex-col border-2 md:items-start md:text-left mb-16 md:mb-0 items-center text-center border border-gray-200 px-6 py-12 rounded-tr-3xl rounded-bl-3xl shadow-md dark:bg-cgray-50 dark:text-gray-50 bg-white dark:bg-rose-200 dark:bg-opacity-90">
+        <div className="lg:flex-grow md:w-4/5 lg:pr-24 md:pr-16 flex flex-col border-2 md:items-start md:text-left mb-16 md:mb-0 items-center text-center border border-gray-200 px-6 py-12 rounded-tr-3xl rounded-bl-3xl shadow-md dark:bg-cgray-50 dark:text-gray-50 bg-white dark:bg-rose-100 dark:bg-opacity-90">
           <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cgray-500">
             GET TO KNOW AZLA
           </h2>

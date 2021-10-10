@@ -38,7 +38,7 @@ export default function FooterLayout() {
         "
           id="contact"
         >
-          <div className="bg-cgray-700 m-1 py-4 lg:mx-80">
+          <div className="bg-wgray-600 m-1 py-4 lg:mx-80">
             <h5 className="text-rose-100 gagalin"> GET IN TOUCH </h5>
             <h6 className="text-rose-100 text-sm"> MAILING ADDRESS </h6>
             <p className="text-white text-xs">
@@ -106,7 +106,7 @@ export default function FooterLayout() {
           </div>
         </div>
 
-        <div className="text-center bg-cgray-800">
+        <div className="text-center bg-wgray-600">
           <small className="text-white text-xs">Copyright © 2021</small>
         </div>
       </footer>

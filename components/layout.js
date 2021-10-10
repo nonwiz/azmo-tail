@@ -36,7 +36,7 @@ export default function Layout({ children, noContact }) {
         ></script>
       </Head>
       <HeaderLayout />
-      <main className="bg-white dark:bg-cgray-800 font-mono subpixel-antialiased"> {children} </main>
+      <main className="bg-white dark:bg-wgray-600 font-mono subpixel-antialiased"> {children} </main>
       <FooterLayout />
     </>
   );
