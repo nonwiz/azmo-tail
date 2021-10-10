@@ -1,6 +1,6 @@
 export default function Card({props}) {
   return (
-            <div className="overflow-hidden shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
+            <div className="overflow-hidden shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto transform hover:scale-105">
             <a href={props.a} className="w-full block h-full">
               <img
                 alt="blog photo"

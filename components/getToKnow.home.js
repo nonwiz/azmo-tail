@@ -15,7 +15,7 @@ export default function GetToKnowHome() {
           </p>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-2/3 flex justify-start transform lg:-translate-x-14 translate-y-10">
+        <div className="lg:max-w-lg lg:w-full md:w-2/3 flex justify-start transform lg:-translate-x-14 lg:translate-y-10">
           <img
             className="object-cover object-center rounded w-80"
             alt="hero"
