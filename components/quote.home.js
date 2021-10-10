@@ -11,7 +11,7 @@ export default function QuoteHome() {
           </p>
         </div>
         <div className="w-full">
-          <p className="text-sm text-cgray-500 font-bold text-right">
+          <p className="text-sm text-cgray-500 font-thin text-right">
             1 Corinthians 16:14
           </p>
         </div>
