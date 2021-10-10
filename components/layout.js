@@ -36,7 +36,7 @@ export default function Layout({ children, noContact }) {
         ></script>
       </Head>
       <HeaderLayout />
-      <main className="bg-white dark:bg-cgray-800"> {children} </main>
+      <main className="bg-white dark:bg-cgray-800 font-mono subpixel-antialiased"> {children} </main>
       {!noContact && (
         <div className="position-fixed bottom-0 end-0 m-4 contact-btn">
           <a type="button" href="https://forms.gle/RNbMFsykskiJhhhP8" className="btn text-white" target="_blank">
