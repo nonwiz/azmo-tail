@@ -28,7 +28,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      textColor: ['hover'],
+      invert: ['dark'],
     },
   }
 }
