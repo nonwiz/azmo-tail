@@ -1,0 +1,17 @@
+export default function GetToKnowHome() {
+  return (
+    <div className="min-w-screen flex items-center p-5 lg:p-20 overflow-hidden relative mx-2 md:mx-10 lg:mx-24">
+      <div className="flex-1 min-h-full min-w-full rounded-3xl shadow-xl p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left ">
+        <div className="w-full md:w-1/2">
+            <div className="mb-10 md:mb-20 text-gray-600 font-light">
+              <h1 className="font-black uppercase text-3xl lg:text-5xl text-cgray-600 mb-10">GET TO KNOW AZLA</h1>
+                <p className="text-center">Hello, I am Azla from Sabah, Malaysia. currently, I am staying in Thailand as a full-time student. I'm majoring in Bioscience emphasize Community Public Health and Minoring in Education.</p>
+            </div>
+        </div>
+        <div className="w-full md:w-1/2 text-center rounded-3xl flex justify-center">
+          <img src="/assets/home/vertical_stack.png" className="w-72 h-auto mx-2 lg:w-80" />
+        </div>
+    </div>
+</div>
+  );
+}

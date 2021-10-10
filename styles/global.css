@@ -114,6 +114,7 @@ a:hover {
 .parallax-2 {
   background-image: url("/assets/bg/p2.png");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }

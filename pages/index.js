@@ -50,11 +50,10 @@ export default function Home({ sliders }) {
       </Head>
       <HeroHome />
       {/* <SliderHome sliders={sliders} /> */}
-
       <QuoteHome />
       <GetToKnowHome />
-      <BlogHome />
       <br />
+      <BlogHome />
       <VlogHome />
     </Layout>
   );

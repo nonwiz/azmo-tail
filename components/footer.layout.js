@@ -107,7 +107,7 @@ export default function FooterLayout() {
         </div>
 
         <div className="text-center bg-cgray-800">
-          <small className="text-white">Copyright © 2021</small>
+          <small className="text-white text-xs">Copyright © 2021</small>
         </div>
       </footer>
     </>
