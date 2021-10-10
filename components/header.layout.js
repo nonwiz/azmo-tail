@@ -94,13 +94,6 @@ function isDarkMode() {
   }
 }
 
-function onDarkMode() {
-  if (typeof window !== 'undefined') 
-  if (document.documentElement.classList.contains('dark'))
-    return true;
-  return false;
-}
-
 function switchMode() {
   let counter = Number(localStorage.getItem("counter"));
   localStorage.setItem("counter", counter + 1);
@@ -122,18 +115,19 @@ export default function HeaderLayout() {
       <div className=" mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1 mx-1">
-            <a href="#" className="flex flex-row" >
+            <a
+              href="#"
+              className="flex flex-row transform md:scale-110 lg:scale-125"
+            >
               <span className="sr-only">Azmo</span>
               <img
-                className="h-10 w-15 sm:h-10 transform scale-150"
-                src={`/assets/logo_${onDarkMode() ? 'w' : 'b'}.png`}
+                className="h-10 w-15 sm:h-10 transform scale-150 filter dark:invert"
+                src={`/assets/logo.png`}
               />
-            <img
-              className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
+              <img
+                className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2 p-1"
                 src={`/assets/logo_text.png`}
               />
-
-
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -364,11 +358,15 @@ export default function HeaderLayout() {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-cgray-800 ">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>
-                                <img
-                className="h-10 w-15 sm:h-10"
-                src={`/assets/logo_${dark ? 'w' : 'b'}.png`}
-              />
+                <div className="flex flex-row">
+                  <img
+                    className="h-10 w-15 sm:h-10 filter dark:invert"
+                    src={`/assets/logo.png`}
+                  />
+                  <img
+                    className="h-10 w-15 sm:h10 transform scale-150 translate-x-5 p-1"
+                    src={`/assets/logo_text.png`}
+                  />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
@@ -405,7 +403,7 @@ export default function HeaderLayout() {
                 >
                   <span className="dark:text-cgray-100"> Vlogs </span>
                 </a>
-            
+
                 {more.map((item) => (
                   <a
                     key={item.name}
