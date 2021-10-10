@@ -14,7 +14,7 @@ export default function RecentHome() {
       title: "VLOG: DORM ROOM TOUR",
       description:
         "Curious how to make your dorm room to look aesthetic? Check mine!",
-      a: "#",
+      a: "https://www.youtube.com/watch?v=dKwn0XIFyow",
       img: "/assets/home/vlog_room.png",
     },
   ];

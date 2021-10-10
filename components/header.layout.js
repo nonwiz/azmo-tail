@@ -229,7 +229,7 @@ export default function HeaderLayout() {
                       open
                         ? "text-gray-700 dark:text-rose-200"
                         : "text-gray-500 dark:text-gray-50",
-                      "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-rose-200"
+                      "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-rose-200"
                     )}
                   >
                     <span>More</span>

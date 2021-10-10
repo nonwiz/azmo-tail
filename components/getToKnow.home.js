@@ -1,7 +1,7 @@
 export default function GetToKnowHome() {
   return (
     <section className="mt-5 py-10">
-      <div className="text-gray-600 parallax-2 multiply mx-4 md:mx-24 lg:mx-40 px-6 py-12 rounded-lg rounded-tl-3xl rounded-br-3xl">
+      <div className="text-gray-600 parallax-2 multiply mx-4 md:mx-24 lg:mx-40 px-6 py-12 rounded-lg rounded-tl-3xl rounded-br-3xl shadow-xl">
         <div className="md:flex py-12 flex-row ">
           <div className="w-1/2 self-end hidden md:block ">
             <img
@@ -35,9 +35,9 @@ export default function GetToKnowHome() {
 
   
 
-          <div className="w-3/5 md:hidden mx-auto">
+          <div className="w-3/5 md:hidden mx-auto my-2">
             <img
-              className="object-cover object-center transform scale-125 translate-y-16 w-4/5"
+              className="object-cover object-center transform scale-125 sm:scale-110 translate-y-16 w-4/5"
               alt="hero"
               src="/assets/home/vertical_stack.png"
             />

@@ -27,7 +27,7 @@ export default function FooterLayout() {
 
   return (
     <>
-      <footer className="bg-white dark:bg-wgray-600 pt-10">
+      <footer>
         <div
           className="
           parallax-footer

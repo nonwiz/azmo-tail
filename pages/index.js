@@ -51,8 +51,8 @@ export default function Home({ sliders }) {
       </Head>
       <HeroHome />
             <QuoteHome />
-        <RecentHome />
       <GetToKnowHome />
+              <RecentHome />
     </Layout>
   );
 }

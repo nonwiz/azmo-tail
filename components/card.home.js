@@ -1,7 +1,10 @@
+import Link from 'next/link';
+
 export default function Card({props}) {
   return (
             <div className="overflow-hidden shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto transform hover:scale-105">
-            <a href={props.a} className="w-full block h-full">
+            <Link href={props.a}> 
+            <a className="w-full block h-full" target="_blank">
               <img
                 alt="blog photo"
                 src={props.img}
@@ -17,6 +20,7 @@ export default function Card({props}) {
                 </p>
               </div>
             </a>
+            </Link>
           </div>
   );
 }
