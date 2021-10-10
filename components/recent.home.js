@@ -20,8 +20,8 @@ export default function RecentHome() {
   ];
 
   return (
-    <section className="p-6">
-      <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cgray-500 dark:text-cgray-50 text-center">
+    <section className="p-6 mt-10">
+      <h2 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-cgray-500 dark:text-cgray-50 text-center">
         {" "}
         Recent{" "}
       </h2>
