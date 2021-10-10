@@ -1,6 +1,6 @@
 export default function QuoteHome() {
   return (
-    <div className="flex items-center justify-center px-5 py-10 my-10 ">
+    <div className="flex items-center justify-center px-5 my-5 ">
       <div className="mx-5 px-5 max-w-xl rounded-lg bg-white dark:bg-rose-100 shadow shadow-xl py-5 ">
         <div className="w-full mb-2">
           <p className="text-base text-gray-600 text-center">

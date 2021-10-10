@@ -17,17 +17,36 @@ export default function RecentHome() {
       a: "#",
       img: "/assets/home/vlog_room.png",
     },
+  {
+      category: "Vlog",
+      title: "VLOG: DORM ROOM TOUR 1",
+      description:
+        "Curious how to make your dorm room to look aesthetic? Check mine!",
+      a: "#",
+      img: "/assets/home/vlog_room.png",
+    },
+{
+      category: "Vlog",
+      title: "VLOG: DORM ROOM TOUR 2",
+      description:
+        "Curious how to make your dorm room to look aesthetic? Check mine!",
+      a: "#",
+      img: "/assets/home/vlog_room.png",
+    },
   ];
 
   return (
-    <section className="p-6 mt-10">
-      <h2 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-cgray-500 dark:text-cgray-50 text-center">
+    <section className="lg:p-6 my-5">
+      <div className="title-font sm:text-4xl text-3xl mb-1 font-medium text-cgray-500 dark:text-cgray-50 text-center">
+        <h2>
         {" "}
         Recent{" "}
-      </h2>
-
+        </h2>
+        <hr className="mt-2 mx-auto w-20"/>
+      </div>
+      
       <div className="w-full p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-24 lg:gap-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 items-center ">
           {recent.map((item) => (
             <Card props={item} key={item.title}/>
           ))}

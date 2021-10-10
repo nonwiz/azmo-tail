@@ -50,10 +50,9 @@ export default function Home({ sliders }) {
         <title>Azmo | Home</title>
       </Head>
       <HeroHome />
-      {/* <SliderHome sliders={sliders} /> */}
+        <RecentHome />
       <QuoteHome />
       <GetToKnowHome />
-      <RecentHome />
     </Layout>
   );
 }
