@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Card({props}) {
   return (
-            <div className="overflow-hidden shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto transform hover:scale-105">
+            <div className="overflow-hidden shadow-2xl rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto transform hover:scale-105 mx-5">
             <Link href={props.a}> 
             <a className="w-full block h-full" target="_blank">
               <img

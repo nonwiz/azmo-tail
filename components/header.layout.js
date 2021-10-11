@@ -78,7 +78,7 @@ const more = [
 ];
 const recentPosts = [
   { id: 1, name: "Blog: Momo my best friend", href: "#" },
-  { id: 2, name: "Vlog: Dorm Room Tour", href: "#" },
+  { id: 2, name: "Vlog: Dorm Room Tour", href: "https://www.youtube.com/watch?v=dKwn0XIFyow" },
   { id: 3, name: "Collection: Journal 2022", href: "#" },
 ];
 

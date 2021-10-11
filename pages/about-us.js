@@ -6,8 +6,8 @@ import QuoteHome from "../components/quote.home";
 import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
 import HeroHome from "../components/hero.home";
-import HeroAbout from "../components/hero.about-us";
-import MainAbout from '../components/vjl.about-us';
+import HeroAbout from "../components/about-us/hero";
+import MainAbout from '../components/about-us/vjl';
 
 export async function getStaticProps() {
   const basicDetail = {

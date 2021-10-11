@@ -20,7 +20,7 @@ export default function RecentHome() {
   ];
 
   return (
-    <section className="lg:p-6 my-5">
+    <section className="lg:p-6 py-5">
       <div className="title-font sm:text-4xl text-3xl mb-1 font-medium text-cgray-500 dark:text-cgray-50 text-center">
         <h2>
         {" "}
