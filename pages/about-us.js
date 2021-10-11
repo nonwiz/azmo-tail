@@ -5,8 +5,9 @@ import SliderHome from "../components/slider.home";
 import QuoteHome from "../components/quote.home";
 import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
-import HeroHome from '../components/hero.home';
-import RecentHome from '../components/recent.home';
+import HeroHome from "../components/hero.home";
+import HeroAbout from "../components/hero.about-us";
+import MainAbout from '../components/vjl.about-us';
 
 export async function getStaticProps() {
   const basicDetail = {
@@ -41,17 +42,15 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ sliders }) {
+export default function About({ sliders }) {
   return (
     <Layout>
       <Head>
-        <title>Azmo | Home</title>
+        <title>About Us | Azmo</title>
       </Head>
-      <HeroHome />
-      <div className="mt-14"></div>
-            <QuoteHome />
-      <GetToKnowHome />
-              <RecentHome />
+      <HeroAbout />
+      <QuoteHome />
+      <MainAbout />
     </Layout>
   );
 }

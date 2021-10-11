@@ -52,26 +52,26 @@ const posts = [
     icon: DocumentIcon,
   },
 ];
-const callsToAction = [{ name: "Join me", href: "#", icon: MailIcon }];
+const callsToAction = [{ name: "Join us", href: "#", icon: MailIcon }];
 const more = [
   {
-    name: "About me",
+    name: "About Us",
     description:
-      "Get all of your questions answerose in our forums or contact support.",
-    href: "#",
+      "Find more about us.",
+    href: "/about-us",
     icon: UserCircleIcon,
   },
   {
     name: "Privacy",
     description:
-      "Learn how to maximize our platform to get the most out of it.",
+      "How we manage your data.",
     href: "#",
     icon: LockClosedIcon,
   },
   {
     name: "Legal",
     description:
-      "See what meet-ups and other events we might be planning near you.",
+      "More detail one terms and services",
     href: "#",
     icon: ScaleIcon,
   },
@@ -171,9 +171,9 @@ export default function HeaderLayout() {
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white dark:bg-wgray-600 px-5 py-6 sm:gap-8 sm:p-8">
                           {posts.map((item) => (
+                            <Link href={item.href} key={item.name}>
                             <a
                               key={item.name}
-                              href={item.href}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                             >
                               <item.icon
@@ -189,6 +189,7 @@ export default function HeaderLayout() {
                                 </p>
                               </div>
                             </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
@@ -255,9 +256,8 @@ export default function HeaderLayout() {
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 dark:bg-wgray-600">
                           {more.map((item) => (
+                            <Link href={item.href} key={item.name}>
                             <a
-                              key={item.name}
-                              href={item.href}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                             >
                               <item.icon
@@ -273,6 +273,7 @@ export default function HeaderLayout() {
                                 </p>
                               </div>
                             </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
@@ -286,12 +287,13 @@ export default function HeaderLayout() {
                                   key={post.id}
                                   className="text-base truncate"
                                 >
+                                  <Link href={post.href}>
                                   <a
-                                    href={post.href}
                                     className="font-medium text-gray-500 hover:text-gray-700"
                                   >
                                     {post.name}
                                   </a>
+                                  </Link>
                                 </li>
                               ))}
                             </ul>
@@ -376,9 +378,8 @@ export default function HeaderLayout() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {posts.map((item) => (
+                    <Link href={item.href} key={item.name}>
                     <a
-                      key={item.name}
-                      href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-bgray-500"
                     >
                       <item.icon
@@ -389,6 +390,7 @@ export default function HeaderLayout() {
                         {item.name}
                       </span>
                     </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
