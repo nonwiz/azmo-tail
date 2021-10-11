@@ -65,7 +65,7 @@ const more = [
     name: "Privacy",
     description:
       "How we manage your data.",
-    href: "#",
+    href: "/privacy",
     icon: LockClosedIcon,
   },
   {
