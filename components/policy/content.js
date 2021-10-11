@@ -1,8 +1,8 @@
 export default function ContentPrivacy() {
   return (
     <>
-      <section className="py-10 mx-20">
-        <div className="container px-10 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+      <section className="py-10 mx-10 lg:mx-20">
+        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="my-8">
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               Consent
@@ -32,36 +32,30 @@ export default function ContentPrivacy() {
             </p>
           </div>
 
-          <div className="items-center lg:flex">
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
-                Our Logo
-              </h2>
+          <div className="my-8">
+            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+              How we use your information
+            </h2>
 
-              <p className="mt-4 lg:max-w-md">
-                There are several illustrations here that we want to show:
-              </p>
-              <ul className="text-base list-disc ml-3">
-                <li> Head: Represent Momo, my late rabbit </li>
-                <li>
-                  {" "}
-                  Body Part: Triangular shape representing the three aspects of
-                  mental, physical, and spiritual health{" "}
-                </li>
-                <li> Whole Image: A woman who is hugging herself </li>
-              </ul>
-            </div>
-
-            <div className="mt-8 lg:mt-0 lg:w-1/2">
-              <div className="flex items-center justify-center">
-                <div className="max-w-lg">
-                  <img
-                    className="object-cover object-center w-full h-64 rounded-md shadow bg-wgray-400 dark:bg-wgray-50 p-5"
-                    src="/assets/logo.png"
-                  />
-                </div>
-              </div>
-            </div>
+            <p className="mt-4">
+              We use the information we collect in various ways, including to:
+            </p>
+            <ul className="text-base list-disc ml-3 mt-3">
+              <li>Provide, operate, and maintain our website</li>
+              <li>Improve, personalize, and expand our website</li>
+              <li>Understand and analyze how you use our website</li>
+              <li>
+                Develop new products, services, features, and functionality
+              </li>
+              <li>
+                Communicate with you, either directly or through one of our
+                partners, including for customer service, to provide you with
+                updates and other information relating to the website, and for
+                marketing and promotional purposes
+              </li>
+              <li>Send you emails</li>
+              <li>Find and prevent fraud</li>
+            </ul>
           </div>
         </div>
       </section>

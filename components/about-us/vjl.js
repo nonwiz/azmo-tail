@@ -1,8 +1,8 @@
 export default function MainAbout() {
   return (
     <>
-      <section className="py-10 mx-20">
-        <div className="container px-10 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+      <section className="py-10 mx-10 lg:mx-20">
+        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
@@ -74,8 +74,8 @@ export default function MainAbout() {
         </div>
       </section>
 
-      <section className="py-10 mx-44">
-        <div className="container px-10 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+      <section className="py-10 mx-10 lg:mx-44">
+        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div className="mt-8 lg:mt-0 lg:w-1/2">
               <div className="flex items-center justify-center">
