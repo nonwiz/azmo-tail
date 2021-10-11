@@ -150,7 +150,8 @@ export default function ContentPrivacy() {
               while using the internet. We encourage parents and guardians to
               observe, participate in, and/or monitor and guide their online
               activity.
-              <br />
+            </p>
+            <p>
               Azmo does not knowingly collect any Personal Identifiable
               Information from children under the age of 13. If you think that
               your child provided this kind of information on our website, we
