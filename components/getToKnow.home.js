@@ -1,7 +1,7 @@
 export default function GetToKnowHome() {
   return (
     <section className="mt-5 py-10">
-      <div className="text-gray-600 parallax-2 multiply mx-4 md:mx-24 lg:mx-40 px-6 py-12 rounded-lg rounded-tl-3xl rounded-br-3xl shadow-xl">
+      <div className="text-gray-600 parallax-2 multiply mx-4 md:mx-24 lg:mx-40 p-6 lg:py-12 rounded-lg rounded-tl-3xl rounded-br-3xl shadow-xl">
         <div className="md:flex py-12 flex-row ">
           <div className="w-1/2 self-end hidden md:block ">
             <img
@@ -10,7 +10,7 @@ export default function GetToKnowHome() {
               src="/assets/home/gtk_2.png"
             />
           </div>
-          <div className="w-full text-center border border-gray-200 px-6 py-12 rounded-tr-3xl rounded-bl-3xl shadow-md dark:bg-cgray-50 dark:text-gray-50 bg-white bg-opacity-80 dark:bg-rose-100 dark:bg-opacity-70">
+          <div className="w-full text-center border border-gray-200 px-6 py-6 rounded-tr-3xl rounded-bl-3xl shadow-md dark:bg-cgray-50 dark:text-gray-50 bg-white bg-opacity-80 dark:bg-rose-100 dark:bg-opacity-70">
             <div className="text-center">
               <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cgray-500">
                 GET TO KNOW <br />
