@@ -8,9 +8,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: auto !important;
-}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
  
@@ -42,49 +40,6 @@ body {
   font-size: 1.3rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-
-
-h5 {
-  font-size: 1.4rem;
-}
-
-p {
-  font-size: 0.575em;
-}
-
-a {
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.primary-bg-hover:hover a {
-  background: var(--pink) !important;
-}
-
-.header {
-  font-size: 1rem !important;
-  font-family: helvetica;
-}
-
-.primary-bg {
-  background: var(--pink) !important;
-}
-
-.azla-name {
-  font-family: Gagalin;
-  writing-mode: horizontal-tb;
-}
-
-.carousel-text {
-  font-size: 0.5rem;
-}
-
 .parallax-height {
   min-height: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -104,10 +59,6 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
  }
-
- .custom-title {
- }
-
 
 
 .parallax-2 {
@@ -153,77 +104,19 @@ a:hover {
   background-size: 50%;
 }
 
-.vlog-azla {
-  padding-top: 1em;
-  background-image: url("/assets/vlog/vlog_journey.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30%;
+/*
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 450px;
 }
 
-.banner-height {
-  height: 500px;
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }
-
-.contact-btn {
-  background: var(--pink) ;
-  border-radius: 50%;
-}
-
-.contact-btn:hover {
-}
-
-@media (min-width: 700px) {
-  /* For Ipad / Tablet    */
-  .azla-name {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 0.875em;
-  }
-
-  .carousel-item > img {
-    height: 500px;
-  }
-  .carousel-text {
-    font-size: 1.2rem;
-  }
-  .stack-img {
-    transform: translate(-8vw, -30vh);
-  }
-
-  .stack-img > img {
-    height: 450px;
-  }
-
-  .parallax-height {
-    min-height: 500px;
-  }
-}
-
-@media (min-width: 1000px) {
-  /* For larger screen    */
-  .stack-img {
-    transform: translate(-8vw, -40vh);
-  }
-
-  .stack-img > img {
-    height: 600px;
-  }
-
-  .azla-name {
-    font-size: 3rem;
-}
-}
-
-@media screen and (max-width: 500px) {
-  /*   For phone  */
-
-  .stack-img {
-    transform: translate(-8vw, -20vh);
-  }
-
-  .banner-height {
-    height: 400px;
-  }
-}
+*/

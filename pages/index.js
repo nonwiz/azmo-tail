@@ -7,6 +7,7 @@ import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
 import HeroHome from '../components/hero.home';
 import RecentHome from '../components/recent.home';
+import SlideShow from '../components/hero.slideshow.js';
 
 export async function getStaticProps() {
   const basicDetail = {
@@ -47,7 +48,7 @@ export default function Home({ sliders }) {
       <Head>
         <title>Azmo | Home</title>
       </Head>
-      <HeroHome />
+      <SlideShow />
       <div className="mt-14"></div>
             <QuoteHome />
       <GetToKnowHome />

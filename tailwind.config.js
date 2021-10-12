@@ -28,6 +28,7 @@ module.exports = {
       green: colors.green,
       emerald: colors.emerald,
       teal: colors.teal,
+      name: '#eacec5'
     },
   },
   variants: {
