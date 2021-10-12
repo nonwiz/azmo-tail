@@ -15,7 +15,7 @@ export default function SlideShow() {
           <div className="each-slide container mx-auto">
             <div
               style={{ backgroundImage: `url(${item})` }}
-              className="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+              className="bg-cover bg-center  h-auto text-white py-24 md:py-32 px-10 object-fill"
             >
               <div class="md:w-1/2 mx-auto text-center sm:h-40 flex flex-col justify-center bg-white bg-opacity-60 md:bg-opacity-10 rounded-xl px-2">
                 <p class="text-3xl font-bold gagalin text-name font-extrabold">
