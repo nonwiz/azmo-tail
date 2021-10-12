@@ -41,7 +41,6 @@ export default function MainAbout() {
               <ul className="text-base list-disc ml-3">
                 <li> Head: Represent Momo, my late rabbit </li>
                 <li>
-                  {" "}
                   Body Part: Triangular shape representing the three aspects of
                   mental, physical, and spiritual health{" "}
                 </li>
@@ -53,7 +52,7 @@ export default function MainAbout() {
               <div className="flex items-center justify-center">
                 <div className="max-w-lg">
                   <img
-                    className="object-cover object-center w-full h-64 rounded-md shadow bg-wgray-400 dark:bg-wgray-50 p-5"
+                    className="w-40 rounded-md p-5"
                     src="/assets/logo.png"
                   />
                 </div>
@@ -69,10 +68,7 @@ export default function MainAbout() {
             <div className="mt-8 lg:mt-0 lg:w-1/2">
               <div className="flex justify-center">
                 <div className="max-w-lg">
-                  <img
-                    className="object-cover object-center w-full h-64 rounded-md shadow bg-wgray-400 dark:bg-wgray-50"
-                    src="/assets/about/azla.png"
-                  />
+              
                 </div>
               </div>
             </div>
