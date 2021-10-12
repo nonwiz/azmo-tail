@@ -8,7 +8,7 @@ export default function FooterLayout() {
 
     {
       name: "Instagram",
-      href: "https://www.instagram.com/miss.azla/",
+      href: "https://www.instagram.com/azmo.page",
       icon: "/assets/social_media/instagram.svg",
     },
 
