@@ -47,6 +47,7 @@ export default function MainAbout() {
             <p className="mt-4 text-base lg:max-w-md">
               There are several illustrations here that we want to show:
             </p>
+             <div className="lg:w-1/2">
             <ul className="text-base list-disc ml-3">
               <li> Head: Represent Momo, my late rabbit </li>
               <li>
@@ -55,8 +56,9 @@ export default function MainAbout() {
               </li>
               <li> Whole Image: A woman who is hugging herself </li>
             </ul>
+             </div>
 
-            <div className="mt-8 lg:mt-0 lg:w-1/2">
+            <div className="mt-4 lg:mt-0 lg:w-1/2">
               <div className="flex items-center justify-center">
                 <div className="max-w-lg">
                   <img className="w-40 rounded-md p-5" src="/assets/logo.png" />
