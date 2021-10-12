@@ -5,10 +5,8 @@ import SliderHome from "../components/slider.home";
 import QuoteHome from "../components/quote.home";
 import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
-import HeroHome from "../components/hero.home";
-import HeroPrivacy from "../components/policy/hero";
 import ContentPrivacy from '../components/policy/content.js';
-
+import SlideShow from '../components/hero.slideshow.js';
 
 export default function Privacy() {
   return (
@@ -16,8 +14,10 @@ export default function Privacy() {
       <Head>
         <title>Privacy Policy | Azmo</title>
       </Head>
-      <HeroPrivacy />
+      <SlideShow /> 
+        <div className="mt-14"></div>
       <QuoteHome />
+            <div className="mt-5"></div>
       <ContentPrivacy />
     </Layout>
   );

@@ -5,6 +5,16 @@ export default function ContentPrivacy() {
         <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600 text-base">
           <div className="my-8">
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+              Privacy Policy
+            </h2>
+
+            <p className="mt-4 text-base">
+              We care about your privacy
+            </p>
+ 
+          </div>
+          <div className="my-8">
+            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               Consent
             </h2>
 
