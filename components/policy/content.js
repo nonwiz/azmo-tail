@@ -2,13 +2,13 @@ export default function ContentPrivacy() {
   return (
     <>
       <section className="py-10 mx-10 lg:mx-20">
-        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600 text-base">
           <div className="my-8">
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               Consent
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               By using our website, you hereby consent to our Privacy Policy and
               agree to its terms.
             </p>
@@ -18,7 +18,7 @@ export default function ContentPrivacy() {
               Information we collect
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               The personal information that you are asked to provide, and the
               reasons why you are asked to provide it, will be made clear to you
               at the point we ask you to provide your personal information. If
@@ -36,7 +36,7 @@ export default function ContentPrivacy() {
               How we use your information
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               We use the information we collect in various ways, including to:
             </p>
             <ul className="text-base list-disc ml-3 mt-3">
@@ -62,7 +62,7 @@ export default function ContentPrivacy() {
               CCPA Privacy Rights (Do Not Sell My Personal Information)
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               Under the CCPA, among other rights, California consumers have the
               right to:
             </p>
@@ -93,7 +93,7 @@ export default function ContentPrivacy() {
               GDPR Data Protection Rights
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               We would like to make sure you are fully aware of all of your data
               protection rights. Every user is entitled to the following:
             </p>
@@ -145,13 +145,13 @@ export default function ContentPrivacy() {
               Children's Information
             </h2>
 
-            <p className="mt-4">
+            <p className="my-4 text-base">
               Another part of our priority is adding protection for children
               while using the internet. We encourage parents and guardians to
               observe, participate in, and/or monitor and guide their online
               activity.
             </p>
-            <p>
+            <p className="my-4 text-base">
               Azmo does not knowingly collect any Personal Identifiable
               Information from children under the age of 13. If you think that
               your child provided this kind of information on our website, we
