@@ -1,13 +1,13 @@
 import Card from "../../components/card.home";
 
 export default function MainAbout() {
-   const members = {
-      category: "Founder",
-      title: "Azla Sorubou",
-      description: "",
-      a: "/about/azla",
-      img: "/assets/about/azla_1.png",
-    }
+  const members = {
+    category: "Founder",
+    title: "Azla Sorubou",
+    description: "",
+    a: "/about/azla",
+    img: "/assets/about/azla_1.png",
+  };
 
   return (
     <>
@@ -40,26 +40,26 @@ export default function MainAbout() {
             </p>
           </div>
           <div className="items-center lg:flex">
-            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
-              Our Logo
-            </h3>
+            <div className="lg:w-1/2">
+              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+                Our Logo
+              </h3>
 
-            <p className="mt-4 text-base lg:max-w-md">
-              There are several illustrations here that we want to show:
-            </p>
-             <div className="lg:w-1/2">
-            <ul className="text-base list-disc ml-3">
-              <li> Head: Represent Momo, my late rabbit </li>
-              <li>
-                Body Part: Triangular shape representing the three aspects of
-                mental, physical, and spiritual health{" "}
-              </li>
-              <li> Whole Image: A woman who is hugging herself </li>
-            </ul>
-             </div>
+              <p className="mt-4 text-base lg:max-w-md">
+                There are several illustrations here that we want to show:
+              </p>
+              <ul className="text-base list-disc ml-3">
+                <li> Head: Represent Momo, my late rabbit </li>
+                <li>
+                  Body Part: Triangular shape representing the three aspects of
+                  mental, physical, and spiritual health{" "}
+                </li>
+                <li> Whole Image: A woman who is hugging herself </li>
+              </ul>
+            </div>
 
-            <div className="mt-4 lg:mt-0 lg:w-1/2">
-              <div className="flex items-center justify-center">
+            <div className="mt-2 lg:mt-0 lg:w-1/2">
+              <div className="flex">
                 <div className="max-w-lg">
                   <img className="w-40 rounded-md p-5" src="/assets/logo.png" />
                 </div>
