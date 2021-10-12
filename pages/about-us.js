@@ -5,10 +5,10 @@ import SliderHome from "../components/slider.home";
 import QuoteHome from "../components/quote.home";
 import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
-import HeroHome from "../components/hero.home";
 import HeroAbout from "../components/about-us/hero";
 import MainAbout from '../components/about-us/vjl';
-import SlideShow from '../components/hero.slideshow.js';
+import SlideShow from '../components/hero.slideshow';
+import HeroLayout from '../components/hero.layout';
 
 
 export async function getStaticProps() {
@@ -44,13 +44,27 @@ export async function getStaticProps() {
   };
 }
 
+
 export default function About({ sliders }) {
+  const images = [
+  "/assets/bg/transparent.png",
+  "/assets/slider/az_left.png",
+  "/assets/slider/az_right_0.png",
+  "/assets/slider/az_right_1.png",
+];
+
+const content = 'Lifestyle, Vlogging, & Blogging, and Tips about Health';
+
+const slides = 
+[
+  {'title': 'About us', 'content': "", img: images[0], alt: ''},
+]
   return (
     <Layout>
       <Head>
         <title>About Us | Azmo</title>
       </Head>
-      <SlideShow />
+      <HeroLayout slides={slides} />
         <div className="mt-14"></div>
       <QuoteHome />
       <HeroAbout />
