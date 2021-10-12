@@ -51,8 +51,9 @@ export default function About({ sliders }) {
         <title>About Us | Azmo</title>
       </Head>
       <SlideShow />
-      <HeroAbout />
+        <div className="mt-14"></div>
       <QuoteHome />
+      <HeroAbout />
       <MainAbout />
     </Layout>
   );
