@@ -1,6 +1,7 @@
 import Card from "./card.home";
 
 export default function RecentHome() {
+       
   const recent = [
     {
       category: "Blog",
