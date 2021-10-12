@@ -8,6 +8,8 @@ import Image from "next/image";
 import HeroHome from "../components/hero.home";
 import HeroAbout from "../components/about-us/hero";
 import MainAbout from '../components/about-us/vjl';
+import SlideShow from '../components/hero.slideshow.js';
+
 
 export async function getStaticProps() {
   const basicDetail = {
@@ -48,6 +50,7 @@ export default function About({ sliders }) {
       <Head>
         <title>About Us | Azmo</title>
       </Head>
+      <SlideShow />
       <HeroAbout />
       <QuoteHome />
       <MainAbout />

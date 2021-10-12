@@ -4,10 +4,10 @@ export default function MainAbout() {
       <section className="py-10 mx-10 lg:mx-20">
         <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="items-center lg:flex">
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <div>
+              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
                 Our Value
-              </h2>
+              </h3>
 
               <p className="mt-4 text-base ">
                 We believe that every aspect is important for us to growth to
@@ -16,23 +16,12 @@ export default function MainAbout() {
                 and mental. Together we can obtain a better healthy lifestyle.
               </p>
             </div>
-
-            <div className="mt-8 lg:mt-0 lg:w-1/2">
-              <div className="flex items-center justify-center lg:justify-end">
-                <div className="max-w-lg">
-                  <img
-                    className="object-cover object-center w-full h-64 rounded-md shadow bg-wgray-400 dark:bg-wgray-50 p-5"
-                    src="/assets/about/love_undraw.svg"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="my-8">
-            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               What we do?
-            </h2>
+            </h3>
 
             <p className="mt-4 text-base">
               We want to share our story, experience, and studies that may help
@@ -42,9 +31,9 @@ export default function MainAbout() {
           </div>
           <div className="items-center lg:flex">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
                 Our Logo
-              </h2>
+              </h3>
 
               <p className="mt-4 text-base lg:max-w-md">
                 There are several illustrations here that we want to show:
@@ -74,11 +63,11 @@ export default function MainAbout() {
         </div>
       </section>
 
-      <section className="py-10 mx-10 lg:mx-44">
+      <section className="py-10 mx-10 lg:mx-20">
         <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div className="mt-8 lg:mt-0 lg:w-1/2">
-              <div className="flex items-center justify-center">
+              <div className="flex justify-center">
                 <div className="max-w-lg">
                   <img
                     className="object-cover object-center w-full h-64 rounded-md shadow bg-wgray-400 dark:bg-wgray-50"
@@ -89,9 +78,9 @@ export default function MainAbout() {
             </div>
 
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 my-5">
+              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 my-5">
                 Who is Azla Sorubou?
-              </h2>
+              </h3>
 
               <p className="mt-4 text-base ">
                 Hello people, I am Azla, from Sabah, Malaysia. Currently, I am
@@ -104,9 +93,9 @@ export default function MainAbout() {
             </div>
           </div>
           <div className="my-10">
-            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               What is my role in Azmo?
-            </h2>
+            </h3>
 
             <p className="mt-4 text-base">
               Besides being a founder, I am writing content sharing about my
@@ -116,9 +105,9 @@ export default function MainAbout() {
             </p>
           </div>
           <div className="my-10">
-            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               My Quote
-            </h2>
+            </h3>
             <p className="text-lg text-cgray-500 mt-5">
               <span className="px-1 text-cgray-500">&#10077;</span>
               Questioning, observing, answering, correcting, and learning...
@@ -128,9 +117,9 @@ export default function MainAbout() {
           </div>
 
           <div className="my-10">
-            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               My Bible Quote
-            </h2>
+            </h3>
             <div className="text-lg text-cgray-600 mt-5 bg-cgray-50 p-2 pl-5">
               <p className="text-base">
               Ask, and it shall be given you, seek, and ye shall find, knock,
