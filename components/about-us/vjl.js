@@ -9,7 +9,7 @@ export default function MainAbout() {
                 Our Value
               </h2>
 
-              <p className="mt-4 ">
+              <p className="mt-4 text-base ">
                 We believe that every aspect is important for us to growth to
                 obtain maximum healthy lifestyle. Therefore, we believe that our
                 spiritual health should put at first place follow by physical
@@ -34,7 +34,7 @@ export default function MainAbout() {
               What we do?
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               We want to share our story, experience, and studies that may help
               any individual in making decisions. We also share our ideas and
               tips which might help us to grow together.
@@ -46,7 +46,7 @@ export default function MainAbout() {
                 Our Logo
               </h2>
 
-              <p className="mt-4 lg:max-w-md">
+              <p className="mt-4 text-base lg:max-w-md">
                 There are several illustrations here that we want to show:
               </p>
               <ul className="text-base list-disc ml-3">
@@ -93,7 +93,7 @@ export default function MainAbout() {
                 Who is Azla Sorubou?
               </h2>
 
-              <p className="mt-4 ">
+              <p className="mt-4 text-base ">
                 Hello people, I am Azla, from Sabah, Malaysia. Currently, I am
                 staying in Thailand. It has been 3 years already that I am
                 staying here as a full-time student at Asia-Pacific
@@ -108,7 +108,7 @@ export default function MainAbout() {
               What is my role in Azmo?
             </h2>
 
-            <p className="mt-4">
+            <p className="mt-4 text-base">
               Besides being a founder, I am writing content sharing about my
               studies, stories, experiences, and designs. I design this webpage
               like layout and landing page. Lastly, I am also responsible for
@@ -132,7 +132,7 @@ export default function MainAbout() {
               My Bible Quote
             </h2>
             <div className="text-lg text-cgray-600 mt-5 bg-cgray-50 p-2 pl-5">
-              <p>
+              <p className="text-base">
               Ask, and it shall be given you, seek, and ye shall find, knock,
               and it shall be opened unto you. for every one that asked,
               received; and he that seethe, found; and to him that knocked, it
