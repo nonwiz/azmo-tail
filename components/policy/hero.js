@@ -5,7 +5,7 @@ export default function HeroPrivacy() {
         <h1 className="text-3xl font-bold text-wgray-500 dark:text-white md:text-4xl">
           Privacy Policy
         </h1>
-        <p className="mt-6 text-gray-500 dark:text-gray-300">
+        <p className="mt-6 text-gray-500 dark:text-gray-300 text-base">
           We care about your privacy.
         </p>
       </div>
