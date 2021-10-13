@@ -16,7 +16,7 @@ export default function GetToKnowHome() {
                 Welcome to <br /> AZMO.PAGE
               </h2>
               <p className="mb-8 leading-relaxed text-gray-600">
-                We are so excited to launch our brand Azmo's page. Our goal is to use this space to connect with you through our story, idea and tips, and knowledge. if you have any questions please to sent us a message.
+                We are so excited to launch our brand Azmo's page. Our goal is to use this space to connect with you through our story, idea and tips, and knowledge. if you have any questions please do sent us a message.
               </p>
             </div>
           </div>

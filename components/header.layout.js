@@ -22,9 +22,9 @@ import localStorage from "localStorage";
 
 const posts = [
   {
-    name: "Blogs",
+    name: "Blog",
     description: "Lifestyle, Traveling, Experience, Tips and Tricks",
-    href: "/blogs",
+    href: "/blog",
     icon: NewspaperIcon,
   },
   {
