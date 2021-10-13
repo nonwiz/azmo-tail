@@ -29,7 +29,7 @@ export default function About() {
                 <div className="max-w-lg">
                   <img
                     src="/assets/about/azla.png"
-                    className="w-full h-64 rounded-md"
+                    className="w-full h-64 rounded-full"
                   />
                 </div>
               </div>

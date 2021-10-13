@@ -68,13 +68,6 @@ const more = [
     href: "/privacy",
     icon: LockClosedIcon,
   },
-  {
-    name: "Legal",
-    description:
-      "More detail one terms and services",
-    href: "#",
-    icon: ScaleIcon,
-  },
 ];
 const recentPosts = [
   { id: 1, name: "Blog: Momo my best friend", href: "#" },
