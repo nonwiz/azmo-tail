@@ -48,8 +48,13 @@ export default function Blog({ sliders }) {
       <div className="py-14">
         <QuoteHome />
       </div>
-      <div className="">
+      <div className="bg-white md:flex flex-row">
+        <div className="bg-rose-500 h-80 w-full">
+        </div>
 
+        <div className="bg-teal-500 h-80 w-2/3 md:w-1/3 mx-auto">
+
+        </div>
 
       </div>
     </Layout>

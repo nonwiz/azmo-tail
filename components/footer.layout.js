@@ -84,7 +84,7 @@ export default function FooterLayout() {
                 </svg>
               </a>
 
-              <a href="https://pinterest.com/Azlasorubou" target="_blank" className="filter invert">
+              <a href="https://pinterest.com/Azlasorubou" target="_blank" className="filter invert ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
