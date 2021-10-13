@@ -2,3 +2,25 @@
           background-image: url('/assets/collection/design/my_design.png') !important;
  }
 
+
+ .each-slide {
+  background: #23f2ff !important;
+ }
+
+ .ease {
+ background: #23f2ff !important;
+ }
+
+ .each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 550px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}

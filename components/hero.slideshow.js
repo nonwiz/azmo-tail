@@ -1,5 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import styles from './layout.module.css';
 
 const images = [
   "/assets/bg/transparent.png",
@@ -22,7 +23,7 @@ export default function SlideShow() {
     <div className="parallax-1">
       <Slide easing="ease">
         {slides.map((item) => (
-          <div className="each-slide container mx-auto">
+          <div className="each-slide container mx-auto z-auto">
             <div
               style={{ backgroundImage: `url(${item.img})` }}
               className="bg-cover bg-center  h-auto text-white py-24 md:py-32 lg:py-44 px-10 object-fill"
