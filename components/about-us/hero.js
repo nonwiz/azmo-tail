@@ -2,9 +2,9 @@ export default function HeroAbout() {
   return (
     <div className="container px-6 py-16 mx-auto text-center">
       <div className="max-w-lg mx-auto">
-        <h1 className="text-3xl font-bold text-wgray-500 dark:text-white md:text-4xl">
+        <h2 className="text-3xl font-bold text-wgray-500 dark:text-white md:text-4xl">
           Who are we?
-        </h1>
+        </h2>
                 <hr className="mt-4 mx-auto w-20 border-rose-200"/>
         <p className="mt-6 text-gray-500 dark:text-gray-300 text-base">
           Azmo is an individual blog website found by Miss Azla Sorubou and Mr. Chanbroset Prach. Azmo stands for the name of the founder and her late rabbit, Azla Sorubou and Momo.

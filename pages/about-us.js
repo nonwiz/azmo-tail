@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import QuoteHome from "../components/quote.home";
-import Image from "next/image";
 import HeroAbout from "../components/about-us/hero";
-import MainAbout from '../components/about-us/vjl';
+import MainAbout from '../components/about-us/content';
 import HeroPostLayout from '../components/hero.layout';
 
 
@@ -45,7 +43,7 @@ export async function getStaticProps() {
 export default function About() {
 
 const item = 
-  {'title': 'About us', 'content': "AZMO / About Us", img: '', alt: ''}
+    {'title': 'About us', 'content': <> <a href="/"> Azmo </a> / about us </>, img: '', alt: ''}
 
   return (
     <Layout>

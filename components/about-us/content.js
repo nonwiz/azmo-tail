@@ -15,9 +15,9 @@ export default function MainAbout() {
         <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div>
-              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
                 Our Value
-              </h3>
+              </h2>
 
               <p className="mt-4 text-base ">
                 We believe that every aspect is important for us to growth to
@@ -29,9 +29,9 @@ export default function MainAbout() {
           </div>
 
           <div className="my-8">
-            <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+            <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               What we do?
-            </h3>
+            </h2>
 
             <p className="mt-4 text-base">
               We want to share our story, experience, and studies that may help
@@ -41,9 +41,9 @@ export default function MainAbout() {
           </div>
           <div className="items-center lg:flex">
             <div className="lg:w-1/2">
-              <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
+              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
                 Our Logo
-              </h3>
+              </h2>
 
               <p className="mt-4 text-base lg:max-w-md">
                 There are several illustrations here that we want to show:
@@ -68,9 +68,9 @@ export default function MainAbout() {
           </div>
         </div>
         <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600 my-10">
-          <h3 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 text-center">
+          <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 text-center">
             Meet our team
-          </h3>
+          </h2>
           <div className="my-5">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 items-center justify-items-center">
               <Card props={members} />
