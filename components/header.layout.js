@@ -185,7 +185,7 @@ export default function HeaderLayout() {
                             </Link>
                           ))}
                         </div>
-                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                        <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
                               <a
@@ -269,7 +269,7 @@ export default function HeaderLayout() {
                             </Link>
                           ))}
                         </div>
-                        <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
+                        <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 sm:px-8 sm:py-8">
                           <div>
                             <h3 className="text-sm tracking-wide font-medium uppercase text-gray-600">
                               Recent Posts
