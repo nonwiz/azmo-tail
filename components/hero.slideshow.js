@@ -33,7 +33,7 @@ export default function SlideShow() {
                 <p className="text-3xl font-bold gagalin text-name font-extrabold text-rose-500">
                   <span className="text-name">{item.title}</span>
                 </p>
-                <hr className="mt-4 border-2 mx-auto w-4/5 border-rose-200" />
+                <hr className="mt-4 border-2 mx-auto w-4/5 border-wgray-400" />
                 <p class="text-base my-2 text-wgray-700">
                   {content}
                 </p>
