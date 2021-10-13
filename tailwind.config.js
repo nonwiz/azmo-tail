@@ -28,7 +28,7 @@ module.exports = {
       green: colors.green,
       emerald: colors.emerald,
       teal: colors.teal,
-      name: '#eacec5'
+      name: '#d1a6a2',
     },
   },
   variants: {

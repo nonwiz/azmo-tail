@@ -5,8 +5,8 @@ import styles from './layout.module.css';
 const images = [
   "/assets/bg/transparent.png",
   "/assets/slider/az_left.png",
-  "/assets/slider/az_right_0.png",
-  "/assets/slider/az_right_1.png",
+  "/assets/slider/az_figure.png",
+  "/assets/slider/fruit.png",
 ];
 
 const content = 'Lifestyle, Vlogging, & Blogging, and Tips about Health';
@@ -15,7 +15,8 @@ const slides =
 [
   {'title': 'AZMO CHERISH', 'content': content, img: images[0], alt: ''},
   {'title': "LET'S GROW TOGETHER", 'content': content, img: images[1], alt:""},
-  {'title': "LET'S GROW TOGETHER", 'content': content, img: images[2], alt:""}
+  {'title': "LET'S GROW TOGETHER", 'content': content, img: images[2], alt:""},
+  {'title': "LET'S GROW TOGETHER", 'content': content, img: images[3], alt:""}
 ]
 
 export default function SlideShow() {
@@ -28,10 +29,11 @@ export default function SlideShow() {
               style={{ backgroundImage: `url(${item.img})` }}
               className="bg-cover bg-center  h-auto text-white py-24 md:py-32 lg:py-44 px-10 object-fill"
             >
-              <div class="md:w-1/2 mx-auto text-center sm:h-40 flex flex-col justify-center bg-white bg-opacity-60 md:bg-opacity-10 rounded-xl px-2">
-                <p class="text-3xl font-bold gagalin text-name font-extrabold">
-                  {item.title}
+              <div className="md:w-1/2 mx-auto text-center sm:h-40 flex flex-col justify-center bg-white bg-opacity-30 md:bg-opacity-10 rounded-xl px-2">
+                <p className="text-3xl font-bold gagalin text-name font-extrabold text-rose-500">
+                  <span className="text-name">{item.title}</span>
                 </p>
+                <hr className="mt-4 border-2 mx-auto w-4/5 border-rose-200" />
                 <p class="text-base my-2 text-wgray-700">
                   {content}
                 </p>

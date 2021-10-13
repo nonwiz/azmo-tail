@@ -13,14 +13,10 @@ export default function GetToKnowHome() {
           <div className="w-full text-center border border-gray-200 px-6 py-6 rounded-tr-3xl rounded-bl-3xl shadow-md dark:bg-cgray-50 dark:text-gray-50 bg-white bg-opacity-80 dark:bg-rose-100 dark:bg-opacity-70">
             <div className="text-center">
               <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-cgray-500">
-                GET TO KNOW <br />
-                AZLA
+                Welcome to <br /> AZMO.PAGE
               </h2>
               <p className="mb-8 leading-relaxed text-gray-600">
-                {" "}
-                Hello, I'm Azla from Sabah, <br />Malaysia. currently, I'm staying
-                in Thailand as a full-time student. I'm majoring in Bioscience
-                emphasize Community Public Health and Minoring in Education.{" "}
+                We are so excited to launch our brand Azmo's page. Our goal is to use this space to connect with you through our story, idea and tips, and knowledge. if you have any questions please to sent us a message.
               </p>
             </div>
           </div>
@@ -35,9 +31,9 @@ export default function GetToKnowHome() {
 
   
 
-          <div className="w-3/5 md:hidden mx-auto my-2">
+          <div className="w-3/5 md:hidden mx-auto my-3">
             <img
-              className="object-cover object-center transform scale-125 sm:scale-110 translate-y-16 w-4/5"
+              className="object-cover object-center transform scale-125 sm:scale-110 translate-y-10 w-4/5"
               alt="hero"
               src="/assets/home/vertical_stack.png"
             />
