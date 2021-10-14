@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Card({ props }) {
   return (
     <div className="w-64 h-auto m-auto mx-5 overflow-hidden rounded-lg shadow-2xl cursor-pointer transform hover:scale-105">
-      <Link href={`${props.a ? props.a : '/404'}`}>
+      <Link href={`/posts/${props.id}`}>
         <a className="block w-full h-full">
           <img
             alt={props.alt}

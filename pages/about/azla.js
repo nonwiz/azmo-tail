@@ -6,11 +6,12 @@ import Image from "next/image";
 import HeroPostLayout from "../../components/hero.layout";
 
 export default function About() {
-  const item = {
+  const detail = {
     title: "Azla Sorubou",
     content: <><a href="/">AZMO</a> / <a href="/about-us">About Us</a> / Azla Sorubou</>,
     img: "",
     alt: "",
+    a: '/about/azla'
   };
 
   return (
@@ -18,29 +19,29 @@ export default function About() {
       <Head>
         <title>Azla Sorubou | About Us</title>
       </Head>
-      <HeroPostLayout item={item} />
+      <HeroPostLayout detail={detail} />
       <div className="mt-14"></div>
       <QuoteHome />
-      <section className="py-10 mx-5 lg:mx-20 text-base ">
-        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+      <section className="py-10 mx-5 text-base lg:mx-20 ">
+        <div className="container px-5 py-8 mx-auto text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div className="mt-8 lg:mt-0 lg:w-1/2">
               <div className="flex justify-center">
                 <div className="max-w-lg">
                   <img
                     src="/assets/about/azla.png"
-                    className="w-full h-64 rounded-full"
+                    className="object-cover w-full h-64 rounded-full object-fit"
                   />
                 </div>
               </div>
             </div>
 
             <div className="lg:w-2/3">
-              <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 my-5">
+              <h2 className="my-5 text-3xl font-bold text-wgray-600 dark:text-wgray-500">
                 Who is Azla Sorubou?
               </h2>
 
-              <p className="mt-4   ">
+              <p className="mt-4 ">
                 Hello people, I am Azla, from Sabah, Malaysia. Currently, I am
                 staying in Thailand. It has been 3 years already that I am
                 staying here as a full-time student at Asia-Pacific
@@ -55,7 +56,7 @@ export default function About() {
               What is my role in Azmo?
             </h2>
 
-            <p className="mt-4  ">
+            <p className="mt-4 ">
               Besides being a founder, I am writing content sharing about my
               studies, stories, experiences, and designs. I design this webpage
               like layout and landing page. Lastly, I am also responsible for
@@ -66,7 +67,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               My Quote
             </h2>
-            <p className="text-lg text-cgray-500 mt-5">
+            <p className="mt-5 text-lg text-cgray-500">
               <span className="px-1 text-cgray-500">&#10077;</span>
               Questioning, observing, answering, correcting, and learning...
               repeat
@@ -78,20 +79,20 @@ export default function About() {
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               My Bible Quote
             </h2>
-            <div className="text-lg text-cgray-600 mt-5 bg-cgray-50 p-2 pl-5">
-              <p className=" ">
+            <div className="p-2 pl-5 mt-5 text-lg text-cgray-600 bg-cgray-50">
+              <p className="">
                 Ask, and it shall be given you, seek, and ye shall find, knock,
                 and it shall be opened unto you. for every one that asked,
                 received; and he that seethe, found; and to him that knocked, it
                 shall be opened.
               </p>
-              <p className="text-xs text-cgray-500 font-thin text-right">
+              <p className="text-xs font-thin text-right text-cgray-500">
                 Matthew 7:7-8
               </p>
             </div>
           </div>
         </div>
-        <div className="fixed bg-wgray-500 dark:bg-white z-50 left-0 top-52 p-2 text-white dark:text-wgray-600">
+        <div className="fixed left-0 z-50 p-2 text-white bg-wgray-500 dark:bg-white top-52 dark:text-wgray-600">
           <div className="flex flex-col my-2 gap-3">
             <a href="https://www.linkedin.com/in/azla-sorubou-172700127/">
               <svg

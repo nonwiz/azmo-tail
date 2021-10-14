@@ -1,20 +1,20 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-export default function HeroPostLayout({ item }) {
+export default function HeroPostLayout({ detail }) {
   return (
     <div className="parallax-1">
-      <div className="each-slide container mx-auto">
+      <div className="container mx-auto each-slide">
         <div
-          style={{ backgroundImage: `url(${item.img})` }}
-          className="bg-cover bg-center  h-auto text-white py-24 md:py-32 lg:py-44 px-10 object-fill"
+          style={{ backgroundImage: `url(${detail.img})` }}
+          className="object-fill h-auto px-10 py-24 text-white bg-center bg-cover md:py-32 lg:py-44"
         >
-          <div className="md:w-1/2 mx-auto text-center sm:h-40 flex flex-col justify-center bg-white bg-opacity-30 md:bg-opacity-10 rounded-xl px-10">
-            <h1 className="text-4xl font-bold gagalin text-name font-extrabold text-name">
-              {item.title}
+          <div className="flex flex-col justify-center px-10 mx-auto text-center bg-white md:w-1/2 sm:h-40 bg-opacity-30 md:bg-opacity-10 rounded-xl">
+            <h1 className="text-4xl font-bold font-extrabold gagalin text-name">
+              {detail.title}
             </h1>
-            <hr className="mt-4 border-2 mx-auto w-4/5 border-wgray-400" />
-            <p className="text-base my-2 text-wgray-700">{item.content}</p>
+            <hr className="w-4/5 mx-auto mt-4 border-2 border-wgray-400" />
+            <p className="my-2 text-base text-wgray-700">{detail.content}</p>
           </div>
         </div>
       </div>

@@ -21,17 +21,17 @@ export default function RecentHome() {
   ];
 
   return (
-    <section className="lg:p-6 py-5">
-      <div className="title-font sm:text-4xl text-3xl mb-1 font-medium text-cgray-500 dark:text-cgray-50 text-center">
-        <h2>
+    <section className="py-5 lg:p-6">
+      <div className="mb-1 text-3xl font-medium text-center title-font sm:text-4xl text-cgray-500 dark:text-cgray-50">
+        <h2 className="dark:text-cgray-50">
         {" "}
         Recent{" "}
         </h2>
-        <hr className="mt-4 mx-auto w-20 border-rose-200"/>
+        <hr className="w-20 mx-auto mt-4 border-rose-200"/>
       </div>
       
       <div className="w-full p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 items-center justify-items-center">
+        <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 justify-items-center">
           {recent.map((item) => (
             <Card props={item} key={item.title}/>
           ))}
