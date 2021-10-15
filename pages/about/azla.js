@@ -22,7 +22,7 @@ export default function About() {
       <HeroPostLayout detail={detail} />
       <div className="mt-14"></div>
       <QuoteHome />
-      <section className="py-10 mx-5 text-base lg:mx-20 ">
+      <section className="py-10 mx-5 text-base md:mx-10 lg:mx-20 ">
         <div className="container px-5 py-8 mx-auto text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div className="mt-8 lg:mt-0 lg:w-1/2">

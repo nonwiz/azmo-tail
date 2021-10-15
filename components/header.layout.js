@@ -78,7 +78,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 function isDarkMode() {
-  console.log("test");
   if (localStorage.hasOwnProperty("counter")) {
     return Number(localStorage.getItem("counter")) % 2 == 0 ? true : false;
   } else {
@@ -187,8 +186,8 @@ export default function HeaderLayout() {
                         <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
+                              <Link href={item.href}>
+                                <a
                                 className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-wgray-200"
                               >
                                 <item.icon
@@ -197,6 +196,7 @@ export default function HeaderLayout() {
                                 />
                                 <span className="ml-3">{item.name}</span>
                               </a>
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -312,6 +312,7 @@ export default function HeaderLayout() {
             <a
               href="mailto:azmopage@pm.me"
               className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900 "
+              target="_blank"
             >
               <span className="dark:text-cgray-50">Email</span>
             </a>
@@ -408,7 +409,7 @@ export default function HeaderLayout() {
               </div>
               <div>
                 <a
-                  href="#"
+                  href="mailto:azmopage@pm.me"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-wgray-400 hover:bg-wgray-500 dark:bg-rose-200 dark:hover:bg-rose-300 dark:text-wgray-600"
                 >
                   Email

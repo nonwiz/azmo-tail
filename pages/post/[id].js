@@ -30,7 +30,7 @@ export default function Post({ post }) {
       <div className="mt-14"></div>
       <QuoteHome />
       <div className="mt-5">
-        <section className="py-10 mx-10 lg:mx-20">
+        <section className="py-10 mx-5 md:mx-10 lg:mx-20">
           <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
             <div className="my-8">
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
@@ -43,9 +43,9 @@ export default function Post({ post }) {
                       height="315"
                       src={post.video}
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                     <p> {post.content} </p>
                   </>

@@ -1,8 +1,8 @@
 export default function ContentPrivacy() {
   return (
     <>
-      <section className="py-10 mx-10 lg:mx-20">
-        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600 text-base">
+      <section className="py-10 mx-5 md:mx-10 lg:mx-20">
+        <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
           <div className="my-8">
             <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
               Privacy Policy
@@ -49,7 +49,7 @@ export default function ContentPrivacy() {
             <p className="mt-4 text-base">
               We use the information we collect in various ways, including to:
             </p>
-            <ul className="text-base list-disc ml-3 mt-3">
+            <ul className="mt-3 ml-3 text-base list-disc">
               <li>Provide, operate, and maintain our website</li>
               <li>Improve, personalize, and expand our website</li>
               <li>Understand and analyze how you use our website</li>
@@ -76,7 +76,7 @@ export default function ContentPrivacy() {
               Under the CCPA, among other rights, California consumers have the
               right to:
             </p>
-            <ul className="text-base list-disc ml-3 mt-3">
+            <ul className="mt-3 ml-3 text-base list-disc">
               <li>
                 Request that a business that collects a consumer's personal data
                 disclose the categories and specific pieces of personal data
@@ -107,7 +107,7 @@ export default function ContentPrivacy() {
               We would like to make sure you are fully aware of all of your data
               protection rights. Every user is entitled to the following:
             </p>
-            <ul className="text-base list-disc ml-3 my-3">
+            <ul className="my-3 ml-3 text-base list-disc">
               <li>
                 {" "}
                 The right to access – You have the right to request copies of
