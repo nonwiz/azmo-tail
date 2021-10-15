@@ -14,18 +14,18 @@ export default function FourOhFour() {
       <Head>
         <title>404: This page could not be found | Azmo</title>
       </Head>
-      <HeroPostLayout item={pageDetail} />
+      <HeroPostLayout detail={pageDetail} />
       <QuoteHome />
       <div className="py-5">
-          <hr className="mt-4 mx-auto w-20 border-rose-200" />
-        <section className="flex flex-col justify-center items-center">
+          <hr className="w-20 mx-auto mt-4 border-rose-200" />
+        <section className="flex flex-col items-center justify-center">
           <img
             src="/assets/404.svg"
-            className="bg-wgray-400 dark:bg-wgray-300 rounded-lg w-56 my-5 p-5 mx-auto"
+            className="w-56 p-5 mx-auto my-5 rounded-lg bg-wgray-400 dark:bg-wgray-300"
           />
           <div className="w-40 text-center">
             <Link href="/">
-              <a className="text-wgray-600 dark:text-cgray-50 font-sans text-base hover:underline">
+              <a className="font-sans text-base text-wgray-600 dark:text-cgray-50 hover:underline">
                 {" "}
                 Return home{" "}
               </a>
