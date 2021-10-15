@@ -10,7 +10,7 @@ export default function Card({ props }) {
             src={props.img}
             className="object-cover w-full max-h-40"
           />
-          <div className="w-full p-4 bg-white dark:bg-rose-100 h-52">
+          <div className="w-full p-4 bg-white h-44 dark:bg-rose-100">
             <p className="text-base font-medium text-rose-300 dark:text-gray-600">
               {props.category}
             </p>

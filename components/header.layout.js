@@ -24,13 +24,13 @@ const posts = [
   {
     name: "Blog",
     description: "Lifestyle, Traveling, Experience, Tips and Tricks",
-    href: "/blog",
+    href: "/all-posts",
     icon: NewspaperIcon,
   },
   {
     name: "Collection",
-    description: "Drawing, Painting, Designing, Photography",
-    href: "/collection",
+    description: "Coming soon",
+    href: "#",
     icon: SparklesIcon,
   },
   {
@@ -69,10 +69,9 @@ const more = [
     icon: LockClosedIcon,
   },
 ];
-const recentPosts = [
-  { id: 1, name: "Blog: Momo my best friend", href: "#" },
+const recentType = [
+  { id: 1, name: "Blog: Andy and his dream", href: "/posts/andy-dream" },
   { id: 2, name: "Vlog: Dorm Room Tour", href: "https://www.youtube.com/watch?v=dKwn0XIFyow" },
-  { id: 3, name: "Collection: Journal 2022", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -141,7 +140,7 @@ export default function HeaderLayout() {
                       "group rounded-md inline-flex items-center text-base px-1 font-medium text-gray-500 hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-wgray-400 dark:focus:ring-rose-200"
                     )}
                   >
-                    <span>Posts</span>
+                    <span>Type</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -209,10 +208,10 @@ export default function HeaderLayout() {
             </Popover>
 
             <a
-              href="#"
+              href="/all-posts"
               className="py-1 text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"
             >
-              <span className="">Vlogs</span>
+              <span className="">All Posts</span>
             </a>
 
             <Popover className="relative">
@@ -272,10 +271,10 @@ export default function HeaderLayout() {
                         <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 sm:px-8 sm:py-8">
                           <div>
                             <h3 className="text-sm font-medium tracking-wide text-gray-600 uppercase">
-                              Recent Posts
+                              Recent Type
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
-                              {recentPosts.map((post) => (
+                              {recentType.map((post) => (
                                 <li
                                   key={post.id}
                                   className="text-base truncate"
@@ -293,11 +292,10 @@ export default function HeaderLayout() {
                           </div>
                           <div className="mt-5 text-sm">
                             <a
-                              href="#"
+                              href="/all-posts"
                               className="font-medium text-gray-700 hover:text-gray-500"
                             >
-                              {" "}
-                              View all posts{" "}
+                              View all posts
                               <span aria-hidden="true">&rarr;</span>
                             </a>
                           </div>
@@ -318,7 +316,7 @@ export default function HeaderLayout() {
             </a>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium border border-transparent whitespace-nowrap rounded-md shadow-sm text-cgray-500 bg-bgray-50 hover:bg-cgray-100 hover:text-black"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium border border-transparent whitespace-nowrap rounded-md shadow-sm text-cgray-500 bg-bgray-50 hover:bg-cgray-100"
               onClick={() => {
                 switchMode();
                 setDark(!dark);
@@ -329,7 +327,7 @@ export default function HeaderLayout() {
               ) : (
                 <SunIcon className="flex-shrink-0 w-6 h-6 " />
               )}
-              <span className="mx-1 ">{dark ? " Night " : " Light "}</span>
+              <span className="mx-1 hover:text-black">{dark ? " Night " : " Light "}</span>
             </a>
           </div>
         </div>
@@ -391,10 +389,10 @@ export default function HeaderLayout() {
             <div className="px-5 py-6 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <a
-                  href="#"
+                  href="/all-posts"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  <span className="dark:text-cgray-100"> Vlogs </span>
+                  <span className="dark:text-cgray-100"> All Posts </span>
                 </a>
 
                 {more.map((item) => (

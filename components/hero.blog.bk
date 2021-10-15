@@ -1,0 +1,45 @@
+import { Slide } from "react-slideshow-image";
+import Link from "next/link";
+import "react-slideshow-image/dist/styles.css";
+import styles from "./layout.module.css";
+
+const tranparent = "/assets/bg/transparent.png";
+
+export default function BlogHero({ slides }) {
+  return (
+    <div className="parallax-1">
+      <Slide easing="ease">
+        {slides.map((item) => (
+          <div className="container z-auto mx-auto each-slide" key={item.title}>
+            <div
+              style={{ backgroundImage: `` }}
+              className="flex flex-row flex-wrap-reverse object-fill h-auto px-10 py-24 text-white bg-center bg-cover md:py-32 lg:py-44 bg-rose-100"
+            >
+              {" "}
+              <div className="flex flex-col justify-center px-2 mx-auto bg-white md:w-1/2 sm:mx-1 sm:h-40 rounded-xl">
+                <p className="text-3xl font-bold font-extrabold gagalin text-name text-rose-500">
+                  <span className="text-name">{item.title}</span>
+                </p>
+                <hr className="w-3/5 mt-4 border-2 border-wgray-400" />
+                <p className="my-2 text-base text-wgray-700">
+                  {item.category} |
+                  <Link href={`post/${item.id}`}>
+                    <a> View Post </a>
+                  </Link>
+                </p>
+              </div>
+              <div className="flex flex-col justify-center px-2 mx-auto bg-white md:w-1/2 sm:mx-1 sm:h-40 rounded-xl">
+                <div className="block w-full h-40 bg-teal-500">
+                  <img
+                    src={item.img}
+                    className="object-cover w-full max-h-40"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slide>
+    </div>
+  );
+}

@@ -18,13 +18,14 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ allPostsData }) {
-  const [filter, setFilter] = useState({title: '', category: ''})
+  const recent = allPostsData.slice(0, 2);
+  const [filter, setFilter] = useState({title: '', category: ''});
   return (
     <Layout>
       <Head>
-        <title>Blog | Azmo</title>
+        <title>All Posts | Azmo</title>
       </Head>
-      <BlogHero />
+      <BlogHero slides={recent}/>
       <div className="py-10">
         <QuoteHome />
       </div>

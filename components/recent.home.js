@@ -4,18 +4,18 @@ export default function RecentHome() {
        
   const recent = [
     {
-      category: "Blog",
-      title: "MOMO MY BEST FRIEND",
-      description: "This is my late Bunny. click to read the full story.",
-      a: "#",
-      img: "/assets/home/momo_frame.png",
+      category: "Storybook",
+      title: "Andy and his dream to be Astronaut",
+      content: "A short story about Andy",
+      a: "/post/andy-dream",
+      img: "/assets/blog/storybook/andy_his_dream.png",
     },
     {
       category: "Vlog",
       title: "VLOG: DORM ROOM TOUR",
-      description:
+      content:
         "Curious how to make your dorm room to look aesthetic? Check mine!",
-      a: "https://www.youtube.com/watch?v=dKwn0XIFyow",
+      a: "/post/room_tour",
       img: "/assets/home/vlog_room.png",
     },
   ];

@@ -40,11 +40,15 @@ h2 {
 }
 
 p {
-  @apply my-2 text-base subpixel-antialiased break-all;
+  @apply my-2 text-base subpixel-antialiased break-words;
 }
 
 ul {
   @apply mt-3 ml-3 text-base list-disc;
+}
+
+a {
+  @apply hover:text-rose-400;
 }
 
 body {

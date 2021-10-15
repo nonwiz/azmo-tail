@@ -4,7 +4,7 @@ export default function MainAbout() {
   const members = {
     category: "Founder",
     title: "Azla Sorubou",
-    description: "",
+    content: "Hello people, I am Azla, from Sabah, Malaysia",
     a: "/about/azla",
     img: "/assets/about/azla_1.png",
   };
@@ -12,7 +12,7 @@ export default function MainAbout() {
   return (
     <>
       <section className="py-10 mx-10 lg:mx-20">
-        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600">
+        <div className="container px-5 py-8 mx-auto text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
           <div className="items-center lg:flex">
             <div>
               <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500">
@@ -48,7 +48,7 @@ export default function MainAbout() {
               <p className="mt-4 text-base lg:max-w-md">
                 There are several illustrations here that we want to show:
               </p>
-              <ul className="text-base list-disc ml-3">
+              <ul className="ml-3 text-base list-disc">
                 <li> Head: Represent Momo, my late rabbit </li>
                 <li>
                   Body Part: Triangular shape representing the three aspects of
@@ -61,18 +61,18 @@ export default function MainAbout() {
             <div className="mt-2 lg:mt-0 lg:w-1/2">
               <div className="flex">
                 <div className="max-w-lg">
-                  <img className="w-40 rounded-md p-5" src="/assets/logo.png" />
+                  <img className="w-40 p-5 rounded-md" src="/assets/logo.png" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="container px-5 sm:px-20 py-8 mx-auto shadow-xl dark:bg-rose-100 rounded-lg text-gray-500 dark:text-gray-600 my-10">
-          <h2 className="text-3xl font-bold text-wgray-600 dark:text-wgray-500 text-center">
+        <div className="container px-5 py-8 mx-auto my-10 text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
+          <h2 className="text-3xl font-bold text-center text-wgray-600 dark:text-wgray-500">
             Meet our team
           </h2>
           <div className="my-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 items-center justify-items-center">
+            <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 justify-items-center">
               <Card props={members} />
             </div>
           </div>

@@ -1,41 +1,44 @@
 import { Slide } from "react-slideshow-image";
+import Link from "next/link";
 import "react-slideshow-image/dist/styles.css";
-import styles from './layout.module.css';
+import styles from "./layout.module.css";
 
-const images = [
-  "/assets/bg/transparent.png",
-  "/assets/slider/az_left.png",
-  "/assets/slider/az_figure.png",
-  "/assets/slider/fruit.png",
-];
+const tranparent = "/assets/bg/transparent.png";
 
-const content = 'Lifestyle, Vlogging, & Blogging, and Tips about Health';
-
-const slides = 
-[
-  {'title': 'Post #1', 'content': content, img: images[0], alt: ''},
-  {'title': "POST #2", 'content': content, img: images[2], alt:""},
-  {'title': "POST #3", 'content': content, img: images[3], alt:""}
-]
-
-export default function BlogHero() {
+export default function BlogHero({ slides }) {
   return (
     <div className="parallax-1">
       <Slide easing="ease">
         {slides.map((item) => (
-          <div className="each-slide container z-auto mx-auto" key={item.title}>
+          <div className="container mx-auto each-slide" key={item.title}>
             <div
-              style={{ backgroundImage: `url(${item.img})` }}
-              className="bg-cover bg-center h-auto text-white py-24 md:py-32 lg:py-44 px-10 object-fill bg-rose-100"
+              style={{ backgroundImage: `` }}
+              className="object-fill h-auto px-10 py-10 bg-center bg-cover md:py-32 lg:py-44"
             >
-              <div className="md:w-1/2 mx-auto sm:mx-1 sm:h-40 flex flex-col justify-center bg-white bg-opacity-30 md:bg-opacity-10 rounded-xl px-2">
-                <p className="text-3xl font-bold gagalin text-name font-extrabold text-rose-500">
-                  <span className="text-name">{item.title}</span>
-                </p>
-                <hr className="mt-4 border-2 w-3/5 border-wgray-400" />
-                <p className="text-base my-2 text-wgray-700">
-                  Category | View Post
-                </p>
+              <div className="container mx-auto max-h-64">
+                <div className="flex flex-wrap-reverse items-center">
+                  <div className="w-full bg-white md:w-2/3 lg:mx-10 lg:w-1/2 bg-opacity-30 md:bg-opacity-10 rounded-xl">
+                    <div className="pt-5 text-center lg:max-w-lg md:text-left">
+                      <h1 className="text-xl font-bold font-extrabold md:text-3xl gagalin">
+                        <span className="text-name"> {item.title} </span>
+                      </h1>
+                      <hr className="w-4/5 mx-auto mt-1 border-2 md:mt-4 border-wgray-400 md:mx-1" />
+                      <p className="my-2 text-base text-wgray-700">
+                        {item.category} |
+                        <Link href={`post/${item.id}`}>
+                          <a> View Post </a>
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-center w-full pt-0 pt-6 md:w-1/3">
+                    <img
+                      className="w-auto p-1 rounded-lg bg-wgray-600 h-36 md:h-48 lg:max-w-2xl"
+                      src={item.img}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
