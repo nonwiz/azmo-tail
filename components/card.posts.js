@@ -8,7 +8,7 @@ export default function Card({ props }) {
           <img
             alt={props.alt}
             src={props.img}
-            className="object-cover w-full max-h-40"
+            className="object-cover w-full h-full"
           />
           <div className="w-full p-4 bg-white dark:bg-rose-100 h-52">
             <p className="text-base font-medium text-rose-300 dark:text-gray-600">

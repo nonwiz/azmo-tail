@@ -5,6 +5,7 @@ category: "Storybook"
 subcategory: ""
 a: ""
 img: "/assets/blog/storybook/andy_his_dream.png"
+bg: "/assets/blog/storybook/andy_banner.png"
 date: "2021-10-15"
 ---
 
@@ -48,9 +49,11 @@ In the next morning Andy was waking up from this dream. But because of his dream
 
 ## Moral of the story
 
-Do not ever given up your dream. Sometimes someone that you love the most will bring your dream down. But remember do not give up on it. Do not look down on anyone's dream because you never know they might be the successful person in the future.
+Do not ever given up your dream. Sometimes someone that you love the most will bring your dream down. But remember do not give up on it. Do not look down on anyone's dream because you never know they might be the successful person in the future.  
 
+Download game cards (PDF): [Game Card](/assets/blog/storybook/game_card.pdf);  
+Download story book (PDF): [Storybook](/assets/blog/storybook/andy_storybook.pdf);  
 
 ## Reference
 
-[Planet's fact](https://solarsystem.nasa.gov)
+[Planet's fact - NASA Solar System](https://solarsystem.nasa.gov)

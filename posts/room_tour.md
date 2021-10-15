@@ -6,6 +6,7 @@ subcategory: ''
 a: ''
 video: 'https://www.youtube.com/embed/dKwn0XIFyow'
 img: '/assets/vlog/vlog_room.png'
+bg: ''
 date: '2020-10-14'
 ---
 
