@@ -40,7 +40,7 @@ h2 {
 }
 
 p {
-  @apply my-2 text-base subpixel-antialiased break-words;
+  @apply my-2 text-base subpixel-antialiased break-words leading-loose;
 }
 
 ul {

@@ -11,20 +11,16 @@ date: "2021-10-15"
 
 ## Story
 
-Once a upon a time, there is Rabbit named Andy who really want to be an astronaut. Andy love seeing star at night.  
-
-"I want to be an Astronaut and go from planet to planet" said Andy to his friend. "Hahaha that is nonsense, we cannot be an astronaut, we are just a rabbit!" and they continue laughing on Andy.
+Once a upon a time, there is Rabbit named Andy who really want to be an astronaut. Andy love seeing star at night. "I want to be an Astronaut and go from planet to planet" said Andy to his friend. "Hahaha that is nonsense, we cannot be an astronaut, we are just a rabbit!" and they continue laughing on Andy.
 
 The next day:  
-Andy confesses to his parent and sibling about his dream. “Mom, dad, Andy wants to be an Astronaut and Travel from planet to planet”  
-“Are you out of your mind Andy, we cannot do that, we might die!” Said Andy’s dad while Andy’s brother continues laughing on Andy.
+
+Andy confesses to his parent and sibling about his dream. “Mom, dad, Andy wants to be an Astronaut and Travel from planet to planet”. “Are you out of your mind Andy, we cannot do that, we might die!” Said Andy’s dad while Andy’s brother continues laughing on Andy.
 
 That make Andy feel miserable. But that does not stop Andy from continuing his dream. Andy kept studying for his dream. Not only that, but Andy also kept praying and working hard every day.  
 
-Until once upon a time in the middle night,  
-Suddenly there is a light coming from Andy’s window.  
-“Who is that” shout Andy.  
-“Andy, I know about your dream, therefore I would like to bring you to fly around,” said the light.
+Until once upon a time in the middle night, suddenly there is a light coming from Andy’s window.  
+“Who is that” shout Andy. “Andy, I know about your dream, therefore I would like to bring you to fly around,” said the light.
 
 “Hi, my name is Mercury. I am the smallest planet in our solar system, but I am also the fastest planet which only take 88 earth days to finish around the sun. my distance from the sun is 57.91 million km with length of 58-day 15 hour and 30 minutes.  
 

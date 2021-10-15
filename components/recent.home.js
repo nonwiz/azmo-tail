@@ -31,7 +31,7 @@ export default function RecentHome() {
       </div>
       
       <div className="w-full p-12">
-        <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 justify-items-center">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-y-5">
           {recent.map((item) => (
             <Card props={item} key={item.title}/>
           ))}

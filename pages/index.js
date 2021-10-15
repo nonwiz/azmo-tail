@@ -5,8 +5,8 @@ import SliderHome from "../components/slider.home";
 import QuoteHome from "../components/quote.home";
 import GetToKnowHome from "../components/getToKnow.home";
 import Image from "next/image";
-import RecentHome from '../components/recent.home';
-import SlideShow from '../components/hero.slideshow';
+import RecentHome from "../components/recent.home";
+import SlideShow from "../components/hero.slideshow";
 
 export async function getStaticProps() {
   const basicDetail = {
@@ -49,9 +49,9 @@ export default function Home({ sliders }) {
       </Head>
       <SlideShow />
       <div className="mt-14"></div>
-            <QuoteHome />
+      <QuoteHome />
       <GetToKnowHome />
-              <RecentHome />
+      <RecentHome />
     </Layout>
   );
 }
