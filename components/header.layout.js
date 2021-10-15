@@ -206,13 +206,13 @@ export default function HeaderLayout() {
                 </>
               )}
             </Popover>
-
+            <Link href="/all-posts">
             <a
-              href="/all-posts"
               className="py-1 text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"
             >
               <span className="">All Posts</span>
             </a>
+            </Link>
 
             <Popover className="relative">
               {({ open }) => (
@@ -291,13 +291,14 @@ export default function HeaderLayout() {
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
+                            <Link href="/all-posts">
                             <a
-                              href="/all-posts"
                               className="font-medium text-gray-700 hover:text-gray-500"
                             >
                               View all posts
                               <span aria-hidden="true">&rarr;</span>
                             </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
