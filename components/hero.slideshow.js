@@ -30,7 +30,7 @@ export default function SlideShow() {
             >
               <div className="md:w-1/2 mx-auto text-center sm:h-40 flex flex-col justify-center bg-white bg-opacity-30 md:bg-opacity-10 rounded-xl px-2">
                 <h1 className="text-4xl font-bold font-extrabold gagalin text-name text-name">
-                  {item.title}
+                  <span className="text-name">{item.title}</span>
                 </h1>
                 <hr className="mt-4 border-2 mx-auto w-4/5 border-wgray-400" />
                 <p className="text-base my-2 text-wgray-700">{content}</p>

@@ -8,10 +8,14 @@ import HeroPostLayout from "../../components/hero.layout";
 export default function About() {
   const detail = {
     title: "Azla Sorubou",
-    content: <><a href="/">AZMO</a> / <a href="/about-us">About Us</a> / Azla Sorubou</>,
+    content: (
+      <>
+        <a href="/">AZMO</a> / <a href="/about-us">About Us</a> / Azla Sorubou
+      </>
+    ),
     img: "",
     alt: "",
-    a: '/about/azla'
+    a: "/about/azla",
   };
 
   return (
@@ -28,10 +32,7 @@ export default function About() {
             <div className="mt-8 lg:mt-0 lg:w-1/2">
               <div className="flex justify-center">
                 <div className="max-w-lg">
-                  <img
-                    src="/assets/about/azla.png"
-                    className="object-cover w-full h-64 rounded-full object-fit"
-                  />
+                  <img src="/assets/about/azla.png" className="w-56" />
                 </div>
               </div>
             </div>

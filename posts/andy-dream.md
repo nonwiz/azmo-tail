@@ -4,10 +4,12 @@ content: "Short children story about a character name Andy."
 category: "Storybook"
 subcategory: ""
 a: ""
-img: "/assets/blog/storybook/andy_his_dream.png"
-bg: "/assets/blog/storybook/andy_banner.png"
+img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png"
+bg: "/assets/blog/storybook/andy_his_dream/andy_banner.png"
 date: "2021-10-15"
 ---
+
+![Alt text](/assets/blog/storybook/andy_his_dream/3.png "storybook")
 
 ## Story
 
@@ -21,6 +23,7 @@ That make Andy feel miserable. But that does not stop Andy from continuing his d
 
 Until once upon a time in the middle night, suddenly there is a light coming from Andy’s window.  
 “Who is that” shout Andy. “Andy, I know about your dream, therefore I would like to bring you to fly around,” said the light.
+
 
 “Hi, my name is Mercury. I am the smallest planet in our solar system, but I am also the fastest planet which only take 88 earth days to finish around the sun. my distance from the sun is 57.91 million km with length of 58-day 15 hour and 30 minutes.  
 
@@ -42,14 +45,16 @@ Until once upon a time in the middle night, suddenly there is a light coming fro
 
 In the next morning Andy was waking up from this dream. But because of his dream, Andy was known as master of solar system because his knowledge about it.  
 
+![All the planet](/assets/blog/storybook/andy_his_dream/2.png "all planets")
 
 ## Moral of the story
 
 Do not ever given up your dream. Sometimes someone that you love the most will bring your dream down. But remember do not give up on it. Do not look down on anyone's dream because you never know they might be the successful person in the future.  
 
-Download game cards (PDF): [Game Card](/assets/blog/storybook/game_card.pdf);  
-Download story book (PDF): [Storybook](/assets/blog/storybook/andy_storybook.pdf);  
-
 ## Reference
 
 [Planet's fact - NASA Solar System](https://solarsystem.nasa.gov)
+
+[Get Storybook](/assets/blog/storybook/andy_his_dream/andy_storybook.pdf)
+|
+[Get Game Card](/assets/blog/storybook/andy_his_dream/game_card.pdf)

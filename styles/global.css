@@ -40,7 +40,11 @@ h2 {
 }
 
 p {
-  @apply my-2 text-base subpixel-antialiased break-words leading-loose;
+  @apply my-2 text-base subpixel-antialiased leading-loose break-words;
+}
+
+p img {
+  @apply float-right;
 }
 
 ul {
