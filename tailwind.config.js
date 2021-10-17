@@ -5,9 +5,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extends: {
-      backgroundImage: {
-        "get-to-know": "url('/assets/bg/p2.png)'",
-      },
+      backgroundImage: {},
     },
     colors: {
       // Build your palette here
@@ -16,10 +14,10 @@ module.exports = {
       bgray: colors.blueGray,
       cgray: colors.coolGray,
       wgray: colors.warmGray,
-      red: colors.red,
-      blue: colors.sky,
+      dred: colors.red,
+      dblue: colors.sky,
       orange: colors.orange,
-      yellow: colors.yellow,
+      dyellow: colors.yellow,
       amber: colors.amber,
       lime: colors.lime,
       rose: colors.rose,
@@ -28,7 +26,15 @@ module.exports = {
       green: colors.green,
       emerald: colors.emerald,
       teal: colors.teal,
-      name: '#d1a6a2',
+      // university brand colors
+      navyBlue: "#18345e",
+      lightBlue: "#22c1dc",
+      yellow: "#f0ab20",
+      red: "#c01f48",
+      sportsGold: "#8d744a",
+      richBlack: "#211f20",
+      blue: "#007bd6",
+      lightGrey: "#e5e5e4",
     },
   },
   variants: {
