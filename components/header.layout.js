@@ -4,15 +4,12 @@ import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import {
   MenuIcon,
-  ShieldCheckIcon,
   ViewGridIcon,
   XIcon,
   UserCircleIcon,
   MailIcon,
-  DocumentIcon,
   NewspaperIcon,
   SparklesIcon,
-  ScaleIcon,
   LockClosedIcon,
   MoonIcon,
   SunIcon,
@@ -114,7 +111,7 @@ export default function HeaderLayout() {
                   src={`/assets/logo.png`}
                 />
                 <img
-                  className="h-10 p-1 w-15 sm:h10 transform scale-150 translate-x-5 translate-y-2"
+                  className="h-10 p-1 w-15 sm:h10 transform scale-150 translate-x-5 -translate-y-1"
                   src={`/assets/logo_text.png`}
                 />
               </a>
@@ -138,7 +135,7 @@ export default function HeaderLayout() {
                       "group rounded-md inline-flex items-center text-base px-1 font-medium text-gray-500 hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-wgray-400 dark:focus:ring-rose-200"
                     )}
                   >
-                    <span>Type</span>
+                    <span>Section</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -264,7 +261,7 @@ export default function HeaderLayout() {
                         <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 sm:px-8 sm:py-8">
                           <div>
                             <h3 className="text-sm font-medium tracking-wide text-gray-600 uppercase">
-                              Recent Type
+                              Recent
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
                               {recentType.map((post) => (
@@ -348,7 +345,7 @@ export default function HeaderLayout() {
                     src={`/assets/logo.png`}
                   />
                   <img
-                    className="h-10 p-1 w-15 sm:h10 transform scale-150 translate-x-5"
+                    className="h-10 p-1 w-15 sm:h10 transform scale-150 translate-x-5 -translate-y-2"
                     src={`/assets/logo_text.png`}
                   />
                 </div>
