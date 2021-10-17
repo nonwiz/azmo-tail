@@ -6,14 +6,15 @@ import { useRouter } from "next/router";
 export default function MainBlog({ allPosts }) {
   const router = useRouter();
   const [posts, setPosts] = useState(allPosts);
-  const { filter } = useContext(FilterPostContext);
+  const { filter, setFilter } = useContext(FilterPostContext);
   const query = router.asPath.split("#")[1];
 
   useEffect(() => {
     console.log("Before filter: ", posts);
-    console.log("Filter", filter.title, filter.category);
-    console.log("router", router.asPath);
-
+    if (query != undefined) {
+      setFilter((curr) => ({ ...curr, category: query }));
+      console.log(query, "it is define");
+    }
     if (filter.category)
       setPosts(allPosts.filter((item) => item.category == filter.category));
     if (filter.title)
@@ -23,11 +24,7 @@ export default function MainBlog({ allPosts }) {
         )
       );
     if (!filter.category && !filter.title) setPosts(allPosts);
-    if (query) {
-      console.log(query);
-      setPosts(allPosts.filter((item) => item.category == query));
-    }
-  }, [filter]);
+  }, []);
 
   return (
     <>
