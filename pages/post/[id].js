@@ -34,10 +34,13 @@ export default function Post({ post }) {
           <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
             <div className="my-8">
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+              <div class="w-full">
+                <br />
+              </div>
               {post.category == "Storybook" && (
-                <div>
-                  <div className="flex w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-wgray-500 my-1">
-                    <div className="w-2 bg-rose-300"></div>
+                <div class="w-full">
+                  <div className="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-wgray-500 my-1">
+                    <div className="w-2 bg-rose-300 invisible"></div>
 
                     <div className="flex items-start px-2 py-3">
                       <img
@@ -49,7 +52,7 @@ export default function Post({ post }) {
                       <div className="mx-3">
                         <p className="text-gray-600 dark:text-gray-200">
                           <a
-                            className="mx-1 text-rose-200"
+                            className="mx-1 dark:text-rose-200"
                             href={post.storybook}
                           >
                             Get storybook
@@ -59,7 +62,7 @@ export default function Post({ post }) {
                     </div>
                   </div>
 
-                  <div className="flex w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-wgray-500 my-1">
+                  <div className="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-wgray-500 my-1">
                     <div className="w-2 bg-rose-300"></div>
 
                     <div className="flex items-start px-2 py-3">
@@ -72,7 +75,7 @@ export default function Post({ post }) {
                       <div className="mx-3">
                         <p className="text-gray-600 dark:text-gray-200">
                           <a
-                            className="mx-1 text-rose-200"
+                            className="mx-1 dark:text-rose-200"
                             href={post.gamecard}
                           >
                             Get game card
