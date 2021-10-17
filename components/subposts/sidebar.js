@@ -70,10 +70,7 @@ export default function Sidebar({ allPosts }) {
                 : "text-cgray-500 dark:text-gray-50"
             }`}
             onClick={() =>
-              setFilter((curr) => ({
-                title: "",
-                category: "",
-              }))
+              setFilter((curr) => ({ ...curr, title: "", category: "" }))
             }
           >
             Show All
