@@ -7,12 +7,8 @@ export default function MainBlog({ allPosts }) {
   const router = useRouter();
   const [posts, setPosts] = useState(allPosts);
   const { filter, setFilter } = useContext(FilterPostContext);
-  const query = router.asPath.split("#")[1];
 
   useEffect(() => {
-    if (query != undefined) {
-      setFilter((curr) => ({ ...curr, category: query }));
-    }
     if (filter.category)
       setPosts(allPosts.filter((item) => item.category == filter.category));
     if (filter.title)
