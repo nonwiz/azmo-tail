@@ -31,13 +31,13 @@ const posts = [
   {
     name: "Vlog",
     description: "Lifestyle, Traveling, Experience",
-    href: "/all-posts#Vlog",
+    href: "/all-vlog",
     icon: FilmIcon,
   },
   {
     name: "Storybook",
     description: "Short stories, bedtime story",
-    href: "/all-posts#Storybook",
+    href: "/all-storybook",
     icon: ViewGridIcon,
   },
   {
@@ -47,7 +47,9 @@ const posts = [
     icon: SparklesIcon,
   },
 ];
-const callsToAction = [{ name: "Join us", href: "#", icon: MailIcon }];
+const callsToAction = [
+  { name: "Join us", href: "mailto:angelaura9629@gmail.com", icon: MailIcon },
+];
 const more = [
   {
     name: "About Us",
@@ -297,7 +299,7 @@ export default function HeaderLayout() {
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <a
-              href="mailto:azmopage@pm.me"
+              href="mailto:angelaura9629@gmail.com"
               className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900 "
               target="_blank"
             >
@@ -396,7 +398,7 @@ export default function HeaderLayout() {
               </div>
               <div>
                 <a
-                  href="mailto:azmopage@pm.me"
+                  href="mailto:angelaura9629@gmail.com"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-wgray-400 hover:bg-wgray-500 dark:bg-rose-200 dark:hover:bg-rose-300 dark:text-wgray-600"
                 >
                   Email
