@@ -20,7 +20,6 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ allPostsData }) {
-  console.log(allPostsData);
   const recent = allPostsData.slice(0, 2);
   const [filter, setFilter] = useState({
     title: "",
