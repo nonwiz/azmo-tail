@@ -9,7 +9,7 @@ export default function Main({ allPosts }) {
   const { filter, setFilter } = useContext(FilterPostContext);
 
   useEffect(() => {
-    console.log("filter", filter.category);
+    console.log("filter", filter);
     if (filter.category)
       setPosts(allPosts.filter((item) => item.subcategory == filter.category));
     if (filter.title)
@@ -18,7 +18,7 @@ export default function Main({ allPosts }) {
           item.title.toLowerCase().includes(filter.title.toLowerCase())
         )
       );
-    if (!filter.category && !filter.title) setPosts(allPosts);
+    if (!filter.category && !filter.title) setPosts((curr) => allPosts);
   }, [filter]);
 
   return (
