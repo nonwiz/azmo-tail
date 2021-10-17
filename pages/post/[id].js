@@ -34,13 +34,15 @@ export default function Post({ post }) {
           <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
             <div className="my-8">
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-              <div class="w-full">
-                <br />
-              </div>
+              <p>
+                {" "}
+                We attach some of the materials that you can use for your kids.
+                Click on either of them to get the PDF file for free.
+              </p>
               {post.category == "Storybook" && (
                 <div class="w-full">
                   <div className="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-wgray-500 my-1">
-                    <div className="w-2 bg-rose-300 invisible"></div>
+                    <div className="w-2 bg-rose-300"></div>
 
                     <div className="flex items-start px-2 py-3">
                       <img

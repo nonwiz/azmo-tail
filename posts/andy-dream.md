@@ -28,6 +28,7 @@ That make Andy feel miserable. But that does not stop Andy from continuing his d
 Until once upon a time in the middle night, suddenly there is a light coming from Andy’s window.  
 “Who is that” shout Andy. “Andy, I know about your dream, therefore I would like to bring you to fly around,” said the light.
 
+![All the planet](/assets/blog/storybook/andy_his_dream/2.png "all planets")
 
 “Hi, my name is Mercury. I am the smallest planet in our solar system, but I am also the fastest planet which only take 88 earth days to finish around the sun. my distance from the sun is 57.91 million km with length of 58-day 15 hour and 30 minutes.  
 
@@ -47,9 +48,9 @@ Until once upon a time in the middle night, suddenly there is a light coming fro
 
 “Hello Andy, I am Pluto. the most far from sun. I was planet before but later the NASA do not include me into the solar system as a planet anymore. “  
 
+
 In the next morning Andy was waking up from this dream. But because of his dream, Andy was known as master of solar system because his knowledge about it.  
 
-![All the planet](/assets/blog/storybook/andy_his_dream/2.png "all planets")
 
 ## Moral of the story
 
