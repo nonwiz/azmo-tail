@@ -6,6 +6,10 @@ subcategory: ""
 a: ""
 img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png"
 bg: "/assets/blog/storybook/andy_his_dream/andy_banner.png"
+storybook_img: '/assets/blog/storybook/andy_his_dream/3.png'
+storybook: '/assets/blog/storybook/andy_his_dream/andy_storybook.pdf'
+gamecard_img: '/assets/blog/storybook/andy_his_dream/2.png'
+gamecard: '/assets/blog/storybook/andy_his_dream/game_card.pdf'
 date: "2021-10-15"
 ---
 
@@ -54,7 +58,3 @@ Do not ever given up your dream. Sometimes someone that you love the most will b
 ## Reference
 
 [Planet's fact - NASA Solar System](https://solarsystem.nasa.gov)
-
-[Get Storybook](/assets/blog/storybook/andy_his_dream/andy_storybook.pdf)
-|
-[Get Game Card](/assets/blog/storybook/andy_his_dream/game_card.pdf)

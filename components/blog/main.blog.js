@@ -1,26 +1,34 @@
-import Card from '../card.posts';
-import { useContext, useState, useEffect } from 'react';
-import { FilterPostContext } from '../hook/PostContext';
+import Card from "../card.posts";
+import { useContext, useState, useEffect } from "react";
+import { FilterPostContext } from "../hook/PostContext";
+import { useRouter } from "next/router";
 
-
-export default function MainBlog({allPosts}) {
+export default function MainBlog({ allPosts }) {
+  const router = useRouter();
   const [posts, setPosts] = useState(allPosts);
-  const {filter} = useContext(FilterPostContext);
-  
+  const { filter } = useContext(FilterPostContext);
+  const query = router.asPath.split("#")[1];
+
   useEffect(() => {
     console.log("Before filter: ", posts);
     console.log("Filter", filter.title, filter.category);
-    
-    if (filter.category) 
-      setPosts(allPosts.filter(item => item.category == filter.category));
-    if (filter.title) 
-      setPosts(posts.filter(item => item.title.toLowerCase().includes(filter.title.toLowerCase())));
-    if (!filter.category && !filter.title)
-      setPosts(allPosts);
-      
+    console.log("router", router.asPath);
 
+    if (filter.category)
+      setPosts(allPosts.filter((item) => item.category == filter.category));
+    if (filter.title)
+      setPosts(
+        posts.filter((item) =>
+          item.title.toLowerCase().includes(filter.title.toLowerCase())
+        )
+      );
+    if (!filter.category && !filter.title) setPosts(allPosts);
+    if (query) {
+      console.log(query);
+      setPosts(allPosts.filter((item) => item.category == query));
+    }
   }, [filter]);
-  
+
   return (
     <>
       <div className="m-3 my-5 mb-1 text-3xl font-medium sm:text-4xl text-cgray-500 dark:text-cgray-50">

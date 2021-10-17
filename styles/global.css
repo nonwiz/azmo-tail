@@ -44,15 +44,15 @@ p {
 }
 
 p img {
-  @apply float-right;
+  @apply float-right w-72 md:w-96;
 }
 
 ul {
   @apply mt-3 ml-3 text-base list-disc;
 }
 
-a {
-  @apply hover:text-rose-400;
+p a {
+  @apply text-rose-400 hover:underline;
 }
 
 body {

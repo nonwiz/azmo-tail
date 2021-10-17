@@ -16,6 +16,7 @@ import {
   LockClosedIcon,
   MoonIcon,
   SunIcon,
+  FilmIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import localStorage from "localStorage";
@@ -23,9 +24,21 @@ import localStorage from "localStorage";
 const posts = [
   {
     name: "Blog",
-    description: "Lifestyle, Traveling, Experience, Tips and Tricks",
+    description: "Coming soon",
     href: "/all-posts",
     icon: NewspaperIcon,
+  },
+  {
+    name: "Vlog",
+    description: "Lifestyle, Traveling, Experience",
+    href: "/all-posts#Vlog",
+    icon: FilmIcon,
+  },
+  {
+    name: "Storybook",
+    description: "Short stories, bedtime story",
+    href: "/all-posts#Storybook",
+    icon: ViewGridIcon,
   },
   {
     name: "Collection",
@@ -33,45 +46,29 @@ const posts = [
     href: "#",
     icon: SparklesIcon,
   },
-  {
-    name: "Experiment",
-    description: "Coming soon",
-    href: "#",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Storybook",
-    description: "Coming soon",
-    href: "#",
-    icon: ViewGridIcon,
-  },
-  {
-    name: "Research",
-    description: "Coming soon",
-    href: "#",
-    icon: DocumentIcon,
-  },
 ];
 const callsToAction = [{ name: "Join us", href: "#", icon: MailIcon }];
 const more = [
   {
     name: "About Us",
-    description:
-      "Find more about us.",
+    description: "Find more about us.",
     href: "/about-us",
     icon: UserCircleIcon,
   },
   {
     name: "Privacy",
-    description:
-      "How we manage your data.",
+    description: "How we manage your data.",
     href: "/privacy",
     icon: LockClosedIcon,
   },
 ];
 const recentType = [
   { id: 1, name: "Blog: Andy and his dream", href: "/posts/andy-dream" },
-  { id: 2, name: "Vlog: Dorm Room Tour", href: "https://www.youtube.com/watch?v=dKwn0XIFyow" },
+  {
+    id: 2,
+    name: "Vlog: Dorm Room Tour",
+    href: "https://www.youtube.com/watch?v=dKwn0XIFyow",
+  },
 ];
 
 function classNames(...classes) {
@@ -163,23 +160,23 @@ export default function HeaderLayout() {
                         <div className="relative px-5 py-6 bg-white grid gap-6 dark:bg-wgray-600 sm:gap-8 sm:p-8">
                           {posts.map((item) => (
                             <Link href={item.href} key={item.name}>
-                            <a
-                              key={item.name}
-                              className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
-                            >
-                              <item.icon
-                                className="flex-shrink-0 w-6 h-6 text-wgray-400 dark:text-gray-50"
-                                aria-hidden="true"
-                              />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
-                                  {item.name}
-                                </p>
-                                <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </a>
+                              <a
+                                key={item.name}
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
+                              >
+                                <item.icon
+                                  className="flex-shrink-0 w-6 h-6 text-wgray-400 dark:text-gray-50"
+                                  aria-hidden="true"
+                                />
+                                <div className="ml-4">
+                                  <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
+                                    {item.name}
+                                  </p>
+                                  <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              </a>
                             </Link>
                           ))}
                         </div>
@@ -187,15 +184,13 @@ export default function HeaderLayout() {
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
                               <Link href={item.href}>
-                                <a
-                                className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-wgray-200"
-                              >
-                                <item.icon
-                                  className="flex-shrink-0 w-6 h-6 text-gray-600"
-                                  aria-hidden="true"
-                                />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
+                                <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-wgray-200">
+                                  <item.icon
+                                    className="flex-shrink-0 w-6 h-6 text-gray-600"
+                                    aria-hidden="true"
+                                  />
+                                  <span className="ml-3">{item.name}</span>
+                                </a>
                               </Link>
                             </div>
                           ))}
@@ -207,11 +202,9 @@ export default function HeaderLayout() {
               )}
             </Popover>
             <Link href="/all-posts">
-            <a
-              className="py-1 text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"
-            >
-              <span className="">All Posts</span>
-            </a>
+              <a className="py-1 text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
+                <span className="">All Posts</span>
+              </a>
             </Link>
 
             <Popover className="relative">
@@ -249,22 +242,20 @@ export default function HeaderLayout() {
                         <div className="relative px-5 py-6 bg-white grid gap-6 sm:gap-8 sm:p-8 dark:bg-wgray-600">
                           {more.map((item) => (
                             <Link href={item.href} key={item.name}>
-                            <a
-                              className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
-                            >
-                              <item.icon
-                                className="flex-shrink-0 w-6 h-6 text-gray-400 dark:text-gray-50"
-                                aria-hidden="true"
-                              />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
-                                  {item.name}
-                                </p>
-                                <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </a>
+                              <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400">
+                                <item.icon
+                                  className="flex-shrink-0 w-6 h-6 text-gray-400 dark:text-gray-50"
+                                  aria-hidden="true"
+                                />
+                                <div className="ml-4">
+                                  <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
+                                    {item.name}
+                                  </p>
+                                  <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              </a>
                             </Link>
                           ))}
                         </div>
@@ -280,11 +271,9 @@ export default function HeaderLayout() {
                                   className="text-base truncate"
                                 >
                                   <Link href={post.href}>
-                                  <a
-                                    className="font-medium text-gray-500 hover:text-gray-700"
-                                  >
-                                    {post.name}
-                                  </a>
+                                    <a className="font-medium text-gray-500 hover:text-gray-700">
+                                      {post.name}
+                                    </a>
                                   </Link>
                                 </li>
                               ))}
@@ -292,12 +281,10 @@ export default function HeaderLayout() {
                           </div>
                           <div className="mt-5 text-sm">
                             <Link href="/all-posts">
-                            <a
-                              className="font-medium text-gray-700 hover:text-gray-500"
-                            >
-                              View all posts
-                              <span aria-hidden="true">&rarr;</span>
-                            </a>
+                              <a className="font-medium text-gray-700 hover:text-gray-500">
+                                View all posts
+                                <span aria-hidden="true">&rarr;</span>
+                              </a>
                             </Link>
                           </div>
                         </div>
@@ -329,7 +316,9 @@ export default function HeaderLayout() {
               ) : (
                 <SunIcon className="flex-shrink-0 w-6 h-6 " />
               )}
-              <span className="mx-1 hover:text-black">{dark ? " Night " : " Light "}</span>
+              <span className="mx-1 hover:text-black">
+                {dark ? " Night " : " Light "}
+              </span>
             </a>
           </div>
         </div>
@@ -372,17 +361,15 @@ export default function HeaderLayout() {
                 <nav className="grid gap-y-8">
                   {posts.map((item) => (
                     <Link href={item.href} key={item.name}>
-                    <a
-                      className="flex items-center p-3 -m-3 rounded-md hover:bg-bgray-300 dark:hover:bg-bgray-500"
-                    >
-                      <item.icon
-                        className="flex-shrink-0 w-6 h-6 text-cgray-400 dark:text-rose-200"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-3 text-base font-medium text-gray-900 dark:text-cgray-50">
-                        {item.name}
-                      </span>
-                    </a>
+                      <a className="flex items-center p-3 -m-3 rounded-md hover:bg-bgray-300 dark:hover:bg-bgray-500">
+                        <item.icon
+                          className="flex-shrink-0 w-6 h-6 text-cgray-400 dark:text-rose-200"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base font-medium text-gray-900 dark:text-cgray-50">
+                          {item.name}
+                        </span>
+                      </a>
                     </Link>
                   ))}
                 </nav>
