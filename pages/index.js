@@ -46,6 +46,9 @@ export default function Home({ sliders }) {
     <Layout>
       <Head>
         <title>Azmo | Home</title>
+
+        <meta property="og:image" content="/assets/azla.png" />
+        <meta property="twitter:image" content="/assets/azla.png" />
       </Head>
       <SlideShow />
       <div className="mt-14"></div>
