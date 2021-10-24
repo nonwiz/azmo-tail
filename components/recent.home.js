@@ -14,7 +14,7 @@ export default function RecentHome() {
     {
       category: "Collection",
       title: "COLLECTION: My Journal",
-      content: "Did you ever wonder why do people do not like someone else?",
+      content: "Get yourself a free digital journal.",
       a: "/assets/collection/book/journal/journal.pdf",
       img: "/assets/collection/book/journal/journal.png",
     },

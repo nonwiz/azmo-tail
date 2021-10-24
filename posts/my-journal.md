@@ -1,6 +1,6 @@
 ---
 title: 'COLLECTION: My Journal'
-content: 'Did you ever wonder why do people do not like someone else?'
+content: 'Get yourself a free digital journal.'
 category: 'Collection'
 subcategory: 'Book'
 a: '/assets/collection/book/journal/journal.pdf'
