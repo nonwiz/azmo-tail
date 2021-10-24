@@ -3,7 +3,6 @@ title: "Andy and his dream to be Astronaut"
 content: "Short children story about a character name Andy."
 category: "Storybook"
 subcategory: "Bedtime story"
-a: "/assets/blog/storybook/andy_his_dream/andy_storybook.pdf"
 img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png"
 bg: "/assets/blog/storybook/andy_his_dream/andy_banner.png"
 storybook_img: '/assets/blog/storybook/andy_his_dream/3.png'

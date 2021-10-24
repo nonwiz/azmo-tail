@@ -1,21 +1,29 @@
-import Card from "./card.home";
+import Card from "./card.posts";
 
 export default function RecentHome() {
   const recent = [
     {
-      category: "Storybook",
-      title: "Andy and his dream to be Astronaut",
-      content: "A short story about Andy",
-      a: "/post/andy-dream",
-      img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png",
+      category: "Blog",
+      title:
+        "Why people dislike or gossip about you and how to cope with emotional pain",
+      content: "",
+      a: "/post/gossip-hurt",
+      img: "/assets/blog/gossip_hurts/img.png",
+    },
+
+    {
+      category: "Collection",
+      title: "COLLECTION: My Journal",
+      content: "Did you ever wonder why do people do not like someone else?",
+      a: "/assets/collection/book/journal/journal.pdf",
+      img: "/assets/collection/book/journal/journal.png",
     },
     {
-      category: "Vlog",
-      title: "VLOG: DORM ROOM TOUR",
-      content:
-        "Curious how to make your dorm room to look aesthetic? Check mine!",
-      a: "/post/room_tour",
-      img: "/assets/home/vlog_room.png",
+      category: "Storybook",
+      title: "Andy and his dream to be Astronaut",
+      content: "",
+      a: "/post/andy-dream",
+      img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png",
     },
   ];
 

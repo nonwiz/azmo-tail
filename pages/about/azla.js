@@ -10,7 +10,14 @@ export default function About() {
     title: "Azla Sorubou",
     content: (
       <>
-        <a href="/">AZMO</a> / <a href="/about-us">About Us</a> / Azla Sorubou
+        <Link href="/">
+          <a>AZMO</a>
+        </Link>{" "}
+        /{" "}
+        <Link href="/about-us">
+          <a>About Us</a>
+        </Link>{" "}
+        / Azla Sorubou
       </>
     ),
     img: "",
