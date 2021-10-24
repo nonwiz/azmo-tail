@@ -24,6 +24,12 @@ export default function Post({ post }) {
     <Layout>
       <Head>
         <title>{post.title} | Azmo</title>
+
+        <meta property="og:image" content={post.meta ? post.meta : post.img} />
+        <meta
+          property="twitter:image"
+          content={post.meta ? post.meta : post.img}
+        />
       </Head>
       <HeroPostLayout detail={detail} />
       <div className="mt-14"></div>

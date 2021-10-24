@@ -15,24 +15,15 @@ export default function Layout({ children, noContact }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Azla, public health educator shares stories and journey"
+          content="We are so excited to launch our brand Azmo's page. Our goal is to use this space to connect with you through our story, idea and tips, and knowledge. if you have any questions please do sent us a message"
         />
-        <meta property="og:title" content="Azla | Azmo" />
-        <meta property="og:type" content="blog" />
-        <meta
-          property="og:description"
-          content="Azla, public health educator shares journey"
-        />
-        <meta
-          name="twitter:card"
-          content="Azla, public health educator shares her journey and stories"
-        />
-
         <link rel="icon" href="/assets/logo.png" />
-  
       </Head>
       <HeaderLayout />
-      <main className="bg-white dark:bg-wgray-600 subpixel-antialiased"> {children} </main>
+      <main className="bg-white dark:bg-wgray-600 subpixel-antialiased">
+        {" "}
+        {children}{" "}
+      </main>
       <FooterLayout />
     </>
   );

@@ -8,7 +8,8 @@ note: "Noted from Author: Hello guys, I have attached a digital journal. It is f
 attachment_img: "/assets/collection/book/journal/journal.png" 
 attachment_content: "Get your free journal"
 attachment_a: "/assets/collection/book/journal/journal.pdf"
-date: "2021-10-23"
+meta: '/assets/blog/gossip_hurts/meta.png'
+date: "2021-10-24"
 ---
 
 ## Why people dislike or gossip about you and how to cope with emotional pain
