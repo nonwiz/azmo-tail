@@ -26,10 +26,13 @@ export default function FooterLayout() {
             </p>
             <h6 className="text-rose-100 text-sm"> EMAIL ADDRESS </h6>
             <p className="-mt-1">
-              <a href="" className="text-white text-sm">
-                {" "}
-                azla@azmo.page{" "}
-              </a>{" "}
+              <a
+                href="mailto:angelaura9629@gmail.com"
+                className="text-white text-sm"
+                target="_blank"
+              >
+                azla@azmo
+              </a>
             </p>
             <h6 className="text-rose-100 text-sm"> SOCIAL MEDIA </h6>
             <div className="flex flex-row justify-center my-1 gap-1">
