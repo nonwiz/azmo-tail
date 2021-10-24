@@ -24,8 +24,12 @@ export default function Post({ post }) {
     <Layout>
       <Head>
         <title>{post.title} | Azmo</title>
-
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.content} />
         <meta property="og:image" content={post.meta ? post.meta : post.img} />
+        <meta property="twitter:title" content={post.title} />
+        <meta property="twitter:description" content={post.content} />
+
         <meta
           property="twitter:image"
           content={post.meta ? post.meta : post.img}
