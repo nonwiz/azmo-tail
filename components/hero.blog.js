@@ -2,22 +2,18 @@ import { Slide } from "react-slideshow-image";
 import Link from "next/link";
 import "react-slideshow-image/dist/styles.css";
 import styles from "./layout.module.css";
-import { useState } from 'react';
+import { useState } from "react";
 
 const tranparent = "/assets/bg/transparent.png";
 
 export default function BlogHero({ slides }) {
-  const [bg, setBg] = useState('/assets/bg/p1.png');
+  const [bg, setBg] = useState("/assets/bg/p1.png");
   return (
-    <div className="parallax-1"
-      style={{ backgroundImage: `url(${bg})` }}
-    >
+    <div className="parallax-1" style={{ backgroundImage: `url(${bg})` }}>
       <Slide easing="ease">
         {slides.map((item) => (
           <div className="container mx-auto each-slide" key={item.title}>
-            <div
-              className="object-fill h-auto px-10 py-10 bg-center bg-cover md:py-32 lg:py-44"
-            >
+            <div className="object-fill h-auto px-10 py-10 bg-center bg-cover md:py-32 lg:py-44">
               <div className="container mx-auto max-h-64">
                 <div className="flex flex-wrap-reverse items-center">
                   <div className="w-full p-3 bg-white md:w-2/3 lg:mx-10 lg:w-1/2 bg-opacity-30 md:bg-opacity-40 rounded-xl">

@@ -23,6 +23,7 @@
 .gagalin {
   font-family: Gagalin;
 }
+
 h1,
 h2,
 h3,
@@ -31,12 +32,16 @@ h5, h6 {
   font-family: Gagalin !important;
 }
 
-h1 {
-  @apply text-4xl font-bold text-wgray-600 dark:text-wgray-500;
+.remark h1, h2, h3, h4, h5 {
+  @apply my-2 text-4xl font-bold text-center text-wgray-600 dark:text-wgray-500;
 }
 
-h2 {
-  @apply text-3xl font-bold text-wgray-600 dark:text-wgray-500;
+.remark h2 {
+  @apply text-xl text-center;
+}
+
+.remark h3 {
+  @apply text-lg;
 }
 
 p {
@@ -51,6 +56,10 @@ ul {
   @apply mt-3 ml-3 text-base list-disc;
 }
 
+ol {
+  @apply mt-3 ml-3 text-base list-decimal;
+}
+
 p a {
   @apply text-rose-400 hover:underline;
 }
@@ -58,7 +67,7 @@ p a {
 body {
   width: 100%;
   font-family: "Architects Daughter";
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 }
 
 .parallax-height {

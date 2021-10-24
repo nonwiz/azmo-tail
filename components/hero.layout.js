@@ -10,7 +10,7 @@ export default function HeroPostLayout({ detail }) {
           className="object-fill h-auto px-10 py-24 text-white bg-center bg-cover md:py-32 lg:py-44"
         >
           <div className="flex flex-col justify-center px-10 mx-auto text-center bg-white md:w-1/2 sm:h-40 bg-opacity-30 md:bg-opacity-10 rounded-xl">
-            <h1 className="text-4xl font-bold font-extrabold gagalin">
+            <h1 className="text-xl font-bold font-extrabold gagalin">
               <span className="text-name"> {detail.title} </span>
             </h1>
             <hr className="w-4/5 mx-auto mt-4 border-2 border-wgray-400" />

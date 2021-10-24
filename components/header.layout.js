@@ -21,8 +21,8 @@ import localStorage from "localStorage";
 const posts = [
   {
     name: "Blog",
-    description: "Coming soon",
-    href: "/all-posts",
+    description: "",
+    href: "/all-blog",
     icon: NewspaperIcon,
   },
   {
@@ -39,8 +39,8 @@ const posts = [
   },
   {
     name: "Collection",
-    description: "Coming soon",
-    href: "#",
+    description: "",
+    href: "/collection",
     icon: SparklesIcon,
   },
 ];
@@ -49,7 +49,7 @@ const callsToAction = [
 ];
 const more = [
   {
-    name: "About Us",
+    name: "Who are we",
     description: "Find more about us.",
     href: "/about-us",
     icon: UserCircleIcon,
@@ -164,16 +164,16 @@ export default function HeaderLayout() {
                                 className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 w-6 h-6 text-wgray-400 dark:text-gray-50"
+                                  className="flex-shrink-0 w-6 h-6 text-wgray-400 dark:text-gray-50 mt-2"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
                                     {item.name}
                                   </p>
-                                  <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50">
-                                    {item.description}
-                                  </p>
+                                  {/* <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50"> */}
+                                  {/*   {item.description} */}
+                                  {/* </p> */}
                                 </div>
                               </a>
                             </Link>
@@ -201,8 +201,8 @@ export default function HeaderLayout() {
               )}
             </Popover>
             <Link href="/all-posts">
-              <a className="py-1 text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
-                <span className="">All Posts</span>
+              <a className=" text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
+                <span>All Posts</span>
               </a>
             </Link>
 
@@ -217,7 +217,7 @@ export default function HeaderLayout() {
                       "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-rose-200"
                     )}
                   >
-                    <span>More</span>
+                    <span>About us</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -260,7 +260,7 @@ export default function HeaderLayout() {
                         </div>
                         <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 sm:px-8 sm:py-8">
                           <div>
-                            <h3 className="text-sm font-medium tracking-wide text-gray-600 uppercase">
+                            <h3 className="text-sm font-medium tracking-wide text-gray-600 uppercase text-left">
                               Recent
                             </h3>
                             <ul role="list" className="mt-4 space-y-4">
