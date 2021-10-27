@@ -14,6 +14,7 @@ import {
   MoonIcon,
   SunIcon,
   FilmIcon,
+  GiftIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import localStorage from "localStorage";
@@ -59,6 +60,13 @@ const more = [
     description: "How we manage your data.",
     href: "/privacy",
     icon: LockClosedIcon,
+  },
+  {
+    name: "Donate",
+    description:
+      "I would appreciate your donation, as it will be use for the further development of this blog.",
+    href: "https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US",
+    icon: GiftIcon,
   },
 ];
 const recentType = [
@@ -124,87 +132,94 @@ export default function HeaderLayout() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <Popover className="relative">
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={classNames(
-                      open
-                        ? "text-gray-700 dark:text-rose-200"
-                        : "text-gray-500 dark:text-gray-50",
-                      "group rounded-md inline-flex items-center text-base px-1 font-medium text-gray-500 hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-wgray-400 dark:focus:ring-rose-200"
-                    )}
-                  >
-                    <span>Section</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        open ? "text-gray-600" : "text-gray-400",
-                        "ml-2 h-5 w-5 group-hover:text-gray-500"
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button>
+            {/* <Popover className="relative"> */}
+            {/*   {({ open }) => ( */}
+            {/*     <> */}
+            {/*       <Popover.Button */}
+            {/*         className={classNames( */}
+            {/*           open */}
+            {/*             ? "text-gray-700 dark:text-rose-200" */}
+            {/*             : "text-gray-500 dark:text-gray-50", */}
+            {/*           "group rounded-md inline-flex items-center text-base px-1 font-medium text-gray-500 hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-wgray-400 dark:focus:ring-rose-200" */}
+            {/*         )} */}
+            {/*       > */}
+            {/*         <span>Section</span> */}
+            {/*         <ChevronDownIcon */}
+            {/*           className={classNames( */}
+            {/*             open ? "text-gray-600" : "text-gray-400", */}
+            {/*             "ml-2 h-5 w-5 group-hover:text-gray-500" */}
+            {/*           )} */}
+            {/*           aria-hidden="true" */}
+            {/*         /> */}
+            {/*       </Popover.Button> */}
 
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative px-5 py-6 bg-white grid gap-6 dark:bg-wgray-600 sm:gap-8 sm:p-8">
-                          {posts.map((item) => (
-                            <Link href={item.href} key={item.name}>
-                              <a
-                                key={item.name}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
-                              >
-                                <item.icon
-                                  className="flex-shrink-0 w-6 h-6 mt-2 text-wgray-400 dark:text-gray-50"
-                                  aria-hidden="true"
-                                />
-                                <div className="ml-4">
-                                  <p className="text-base font-medium text-gray-900 dark:text-cgray-50">
-                                    {item.name}
-                                  </p>
-                                  {/* <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50"> */}
-                                  {/*   {item.description} */}
-                                  {/* </p> */}
-                                </div>
-                              </a>
-                            </Link>
-                          ))}
-                        </div>
-                        <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {callsToAction.map((item) => (
-                            <div key={item.name} className="flow-root">
-                              <Link href={item.href}>
-                                <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-wgray-200">
-                                  <item.icon
-                                    className="flex-shrink-0 w-6 h-6 text-gray-600"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
-                              </Link>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </>
-              )}
-            </Popover>
-            <Link href="/all-posts">
-              <a className="text-base font-medium text-gray-500  hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
-                <span>All Posts</span>
-              </a>
-            </Link>
+            {/*       <Transition */}
+            {/*         as={Fragment} */}
+            {/*         enter="transition ease-out duration-200" */}
+            {/*         enterFrom="opacity-0 translate-y-1" */}
+            {/*         enterTo="opacity-100 translate-y-0" */}
+            {/*         leave="transition ease-in duration-150" */}
+            {/*         leaveFrom="opacity-100 translate-y-0" */}
+            {/*         leaveTo="opacity-0 translate-y-1" */}
+            {/*       > */}
+            {/*         <Popover.Panel className="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"> */}
+            {/*           <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"> */}
+            {/*             <div className="relative px-5 py-6 bg-white grid gap-6 dark:bg-wgray-600 sm:gap-8 sm:p-8"> */}
+            {/*               {posts.map((item) => ( */}
+            {/*                 <Link href={item.href} key={item.name}> */}
+            {/*                   <a */}
+            {/*                     key={item.name} */}
+            {/*                     className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400" */}
+            {/*                   > */}
+            {/*                     <item.icon */}
+            {/*                       className="flex-shrink-0 w-6 h-6 mt-2 text-wgray-400 dark:text-gray-50" */}
+            {/*                       aria-hidden="true" */}
+            {/*                     /> */}
+            {/*                     <div className="ml-4"> */}
+            {/*                       <p className="text-base font-medium text-gray-900 dark:text-cgray-50"> */}
+            {/*                         {item.name} */}
+            {/*                       </p> */}
+            {/*                       {/1* <p className="mt-1 text-sm text-gray-500 dark:text-cgray-50"> *1/} */}
+            {/*                       {/1*   {item.description} *1/} */}
+            {/*                       {/1* </p> *1/} */}
+            {/*                     </div> */}
+            {/*                   </a> */}
+            {/*                 </Link> */}
+            {/*               ))} */}
+            {/*             </div> */}
+            {/*             <div className="px-5 py-5 bg-wgray-200 dark:bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8"> */}
+            {/*               {callsToAction.map((item) => ( */}
+            {/*                 <div key={item.name} className="flow-root"> */}
+            {/*                   <Link href={item.href}> */}
+            {/*                     <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-wgray-200"> */}
+            {/*                       <item.icon */}
+            {/*                         className="flex-shrink-0 w-6 h-6 text-gray-600" */}
+            {/*                         aria-hidden="true" */}
+            {/*                       /> */}
+            {/*                       <span className="ml-3">{item.name}</span> */}
+            {/*                     </a> */}
+            {/*                   </Link> */}
+            {/*                 </div> */}
+            {/*               ))} */}
+            {/*             </div> */}
+            {/*           </div> */}
+            {/*         </Popover.Panel> */}
+            {/*       </Transition> */}
+            {/*     </> */}
+            {/*   )} */}
+            {/* </Popover> */}
+            {posts.map((item, index) => (
+              <Link href={item.href} key={index}>
+                <a className="text-base font-medium text-gray-500  hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
+                  <span>{item.name}</span>
+                </a>
+              </Link>
+            ))}
+            {/* <Link href="/all-posts"> */}
+            {/*   <a className="text-base font-medium text-gray-500  hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200"> */}
+            {/*     <span>All Posts</span> */}
+            {/*   </a> */}
+            {/* </Link> */}
 
             <Popover className="relative">
               {({ open }) => (
@@ -217,7 +232,7 @@ export default function HeaderLayout() {
                       "group rounded-md inline-flex items-center text-base px-1 font-medium hover:text-gray-700 dark:hover:text-rose-200 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-rose-200"
                     )}
                   >
-                    <span>About us</span>
+                    <span>About</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -295,13 +310,13 @@ export default function HeaderLayout() {
             </Popover>
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-            <a
-              href="https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US"
-              className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900 "
-              target="_blank"
-            >
-              <span className="dark:text-cgray-50">Give</span>
-            </a>
+            {/* <a */}
+            {/*   href="https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US" */}
+            {/*   className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900 " */}
+            {/*   target="_blank" */}
+            {/* > */}
+            {/*   <span className="dark:text-cgray-50">Gift</span> */}
+            {/* </a> */}
             <a
               href="#"
               className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium border border-transparent whitespace-nowrap rounded-md shadow-sm text-cgray-500 bg-bgray-50 hover:bg-cgray-100"
@@ -395,10 +410,10 @@ export default function HeaderLayout() {
               </div>
               <div>
                 <a
-                  href="https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US"
+                  href="mailto:angelaura9629@gmail.com"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-wgray-400 hover:bg-wgray-500 dark:bg-rose-200 dark:hover:bg-rose-300 dark:text-wgray-600"
                 >
-                  Give
+                  Email
                 </a>
                 <p className="mt-6 text-base font-medium text-center text-gray-500">
                   <a
