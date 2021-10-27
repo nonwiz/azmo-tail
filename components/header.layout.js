@@ -45,7 +45,7 @@ const posts = [
   },
 ];
 const callsToAction = [
-  { name: "Join us", href: "mailto:angelaura9629@gmail.com", icon: MailIcon },
+  { name: "Email us", href: "mailto:angelaura9629@gmail.com", icon: MailIcon },
 ];
 const more = [
   {
@@ -164,7 +164,7 @@ export default function HeaderLayout() {
                                 className="flex items-start p-3 -m-3 rounded-lg hover:bg-wgray-100 dark:hover:bg-wgray-400"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 w-6 h-6 text-wgray-400 dark:text-gray-50 mt-2"
+                                  className="flex-shrink-0 w-6 h-6 mt-2 text-wgray-400 dark:text-gray-50"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
@@ -201,7 +201,7 @@ export default function HeaderLayout() {
               )}
             </Popover>
             <Link href="/all-posts">
-              <a className=" text-base font-medium text-gray-500 hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
+              <a className="text-base font-medium text-gray-500  hover:text-gray-700 dark:text-gray-50 dark:hover:text-rose-200">
                 <span>All Posts</span>
               </a>
             </Link>
@@ -296,11 +296,11 @@ export default function HeaderLayout() {
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <a
-              href="mailto:angelaura9629@gmail.com"
+              href="https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US"
               className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900 "
               target="_blank"
             >
-              <span className="dark:text-cgray-50">Email</span>
+              <span className="dark:text-cgray-50">Give</span>
             </a>
             <a
               href="#"
@@ -395,10 +395,10 @@ export default function HeaderLayout() {
               </div>
               <div>
                 <a
-                  href="mailto:angelaura9629@gmail.com"
+                  href="https://paypal.me/azlasorubou83?country.x=MY&locale.x=en_US"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-wgray-400 hover:bg-wgray-500 dark:bg-rose-200 dark:hover:bg-rose-300 dark:text-wgray-600"
                 >
-                  Email
+                  Give
                 </a>
                 <p className="mt-6 text-base font-medium text-center text-gray-500">
                   <a
