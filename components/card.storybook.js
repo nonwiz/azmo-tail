@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { truncate } from "../lib/process";
+import { truncate } from "../lib/format.js";
 
 export default function Card({ props }) {
   return (
