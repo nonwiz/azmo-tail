@@ -8,7 +8,7 @@ note: "Noted from Author: Hello guys, I have attached a digital bible journal. I
 attachment_img: "/assets/collection/book/journal/bible-journal.png" 
 attachment_content: "Get your bible journal"
 attachment_a: "/assets/collection/book/journal/bible-journal.pdf"
-meta: '/assets/blog/gossip_hurts/meta.png'
+meta: '/assets/blog/depression/meta.png'
 date: "2021-10-28"
 ---
 
