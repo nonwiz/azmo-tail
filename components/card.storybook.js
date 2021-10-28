@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { truncate } from "./addon/process";
+import { truncate } from "../lib/process";
 
 export default function Card({ props }) {
   return (

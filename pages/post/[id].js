@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import QuoteHome from "../../components/quote.home";
 import HeroPostLayout from "../../components/hero.layout";
-import { formatDate } from "../../components/addon/process";
+import { formatDate } from "../../lib/process";
 
 export default function Post({ post }) {
   const detail = {
