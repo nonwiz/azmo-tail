@@ -1,5 +1,5 @@
 ---
-title: 'COLLECTION: My Journal'
+title: 'COLLECTION: Journal'
 content: 'Get yourself a free digital journal.'
 category: 'Collection'
 subcategory: 'Book'

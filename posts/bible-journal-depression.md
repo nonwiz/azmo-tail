@@ -1,5 +1,5 @@
 ---
-title: 'COLLECTION: My Bible Journal'
+title: 'COLLECTION: Bible Journal'
 content: 'Get yourself a Bible journal.'
 category: 'Collection'
 subcategory: 'Book'
