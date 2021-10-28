@@ -6,7 +6,7 @@ subcategory: 'Book'
 a: '/assets/collection/book/journal/journal.pdf'
 img: '/assets/collection/book/journal/journal.png'
 bg: ''
-date: '2020-10-24'
+date: '2021-10-24'
 ---
 
 

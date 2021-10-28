@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { truncate } from "./addon/process";
 
 export default function Card({ props }) {
   return (
@@ -10,7 +11,7 @@ export default function Card({ props }) {
 
         <div className="w-2/3 p-4 md:p-4">
           <h1 className="text-base text-gray-800 md:text-lg dark:text-gray-600 gagalin">
-            {props.title}
+            {truncate(props.title)}
           </h1>
 
           <p className="mt-2 text-sm text-gray-400 dark:text-gray-600">

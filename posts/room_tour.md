@@ -7,7 +7,7 @@ a: 'https://www.youtube.com/watch?v=dKwn0XIFyow'
 video: 'https://www.youtube.com/embed/dKwn0XIFyow'
 img: '/assets/vlog/vlog_room.png'
 bg: ''
-date: '2020-10-14'
+date: '2021-10-14'
 ---
 
 

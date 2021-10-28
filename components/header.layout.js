@@ -68,15 +68,15 @@ const more = [
 const recentType = [
   {
     id: 1,
+    name: "Blog: Should we ignore depression?",
+    href: "/posts/depression",
+  },
+  {
+    id: 2,
     name: "Blog: Why people dislike or gossip about you",
     href: "/posts/gossip-hurt",
   },
-  { id: 2, name: "Blog: Andy and his dream", href: "/posts/andy-dream" },
-  {
-    id: 3,
-    name: "Vlog: Dorm Room Tour",
-    href: "https://www.youtube.com/watch?v=dKwn0XIFyow",
-  },
+  { id: 3, name: "Blog: Andy and his dream", href: "/posts/andy-dream" },
 ];
 
 function classNames(...classes) {

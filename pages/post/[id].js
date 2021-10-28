@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import QuoteHome from "../../components/quote.home";
 import HeroPostLayout from "../../components/hero.layout";
+import { formatDate } from "../../components/addon/process";
 
 export default function Post({ post }) {
   const detail = {
@@ -133,6 +134,9 @@ export default function Post({ post }) {
         <section className="py-5 mx-5 md:mx-10 lg:mx-20">
           <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
             <div className="my-8 remark">
+              <div className="text-right text-base">
+                {formatDate(post.date)}
+              </div>
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
               <div className="text-center">

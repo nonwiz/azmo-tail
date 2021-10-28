@@ -4,8 +4,8 @@ import QuoteHome from "../components/quote.home";
 import BlogHero from "../components/hero.blog";
 import SidebarBlog from "../components/blog/sidebar.blog";
 import MainBlog from "../components/blog/main.blog";
-import { getSortedPostsData } from "../lib/posts";
 import { useState } from "react";
+import { getSortedPostsData } from "../lib/posts";
 import { FilterPostContext } from "../components/hook/PostContext";
 
 export async function getStaticProps() {

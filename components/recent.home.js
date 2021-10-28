@@ -1,32 +1,7 @@
 import Card from "./card.posts";
+import Link from "next/link";
 
-export default function RecentHome() {
-  const recent = [
-    {
-      category: "Blog",
-      title:
-        "Why people dislike or gossip about you and how to cope with emotional pain",
-      content: "",
-      a: "/post/gossip-hurt",
-      img: "/assets/blog/gossip_hurts/img.png",
-    },
-
-    {
-      category: "Collection",
-      title: "COLLECTION: My Journal",
-      content: "Get yourself a free digital journal.",
-      a: "/assets/collection/book/journal/journal.pdf",
-      img: "/assets/collection/book/journal/journal.png",
-    },
-    {
-      category: "Storybook",
-      title: "Andy and his dream to be Astronaut",
-      content: "",
-      a: "/post/andy-dream",
-      img: "/assets/blog/storybook/andy_his_dream/andy_his_dream.png",
-    },
-  ];
-
+export default function RecentHome({ recent }) {
   return (
     <section className="py-5 lg:p-6">
       <div className="mb-1 text-3xl font-medium text-center title-font sm:text-4xl text-cgray-500 dark:text-cgray-50">
@@ -39,6 +14,14 @@ export default function RecentHome() {
           {recent.map((item) => (
             <Card props={item} key={item.title} />
           ))}
+        </div>
+        <div className="w-full my-4 text-center md:text-right">
+          <Link href="/all-posts">
+            <a className="text-wgray-600 dark:text-white hover:underline text-lg">
+              {" "}
+              View all
+            </a>
+          </Link>
         </div>
       </div>
     </section>

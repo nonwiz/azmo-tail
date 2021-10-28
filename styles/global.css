@@ -32,6 +32,11 @@ h5, h6 {
   font-family: Gagalin !important;
 }
 
+blockquote {
+  @apply justify-start w-full p-1 my-1 text-white rounded-lg bg-wgray-500 md:p-2;
+}
+
+
 .remark h1, h2, h3, h4, h5 {
   @apply my-2 text-4xl font-bold text-center text-wgray-600 dark:text-wgray-500;
 }
