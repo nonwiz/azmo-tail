@@ -1,13 +1,22 @@
 import Card from "../../components/card.home";
 
 export default function MainAbout() {
-  const members = {
-    category: "Founder",
-    title: "Azla Sorubou",
-    content: "Hello people, I am Azla, from Sabah, Malaysia",
-    a: "/about/azla",
-    img: "/assets/about/azla_1.png",
-  };
+  const members = [
+    {
+      category: "Founder",
+      title: "Azla Sorubou",
+      content: "Hello people, I am Azla, from Sabah, Malaysia",
+      a: "/about/azla",
+      img: "/assets/about/azla_1.png",
+    },
+    {
+      category: "Developer",
+      title: "Chanbroset Prach",
+      content: "Hi guys, I am Broset from Cambodia",
+      a: "/about/broset",
+      img: "/assets/about/broset_1.jpg",
+    },
+  ];
 
   return (
     <>
@@ -73,7 +82,9 @@ export default function MainAbout() {
           </h2>
           <div className="my-5">
             <div className="items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24 justify-items-center">
-              <Card props={members} />
+              {members.map((item, index) => (
+                <Card props={item} key="index" />
+              ))}
             </div>
           </div>
         </div>
