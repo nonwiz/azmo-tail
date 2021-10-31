@@ -3,7 +3,7 @@ title: "Experiencing suicidal thought: emotional bullied but continue to count m
 content: "You might see the dark of someone until it blinds..."
 category: "Blog"
 subcategory: "Mental Blog"
-img: "/assets/blog/experiencing-suicidal-thought/meta.png"
+img: "/assets/blog/experiencing-suicidal-thought/img.png"
 meta: '/assets/blog/experiencing-suicidal-thought/meta.png'
 date: "2021-10-31"
 note: ""
