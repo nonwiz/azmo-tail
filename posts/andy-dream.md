@@ -10,6 +10,7 @@ storybook: '/assets/blog/storybook/andy_his_dream/andy_storybook.pdf'
 gamecard_img: '/assets/blog/storybook/andy_his_dream/2.png'
 gamecard: '/assets/blog/storybook/andy_his_dream/game_card.pdf'
 date: "2021-10-15"
+note: ''
 ---
 
 ![Alt text](/assets/blog/storybook/andy_his_dream/3.png "storybook")

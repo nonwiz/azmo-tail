@@ -8,6 +8,7 @@ video: 'https://www.youtube.com/embed/dKwn0XIFyow'
 img: '/assets/vlog/vlog_room.png'
 bg: ''
 date: '2021-10-14'
+note: ''
 ---
 
 
