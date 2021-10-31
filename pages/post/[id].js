@@ -42,7 +42,13 @@ export default function Post({ post }) {
       <QuoteHome />
       <div className="mt-5">
         <section className="py-5 mx-5 md:mx-10 lg:mx-20">
-          <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600">
+          <div
+            className={
+              post.category == "Storybook" || post.note.length > 0
+                ? "container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 dark:bg-rose-100 dark:text-gray-600"
+                : ""
+            }
+          >
             {post.category == "Storybook" && (
               <>
                 <p>
