@@ -69,17 +69,17 @@ const recentType = [
   {
     id: 0,
     name: "Blog: Experiencing suicidal thought...",
-    href: "/post/experiencing-suicidal-thought",
+    href: "/post/experiencing_suicidal_thought_10_31",
   },
   {
     id: 1,
     name: "Blog: Should we ignore depression?",
-    href: "/post/depression",
+    href: "/post/should_we_ignore_depression_10_28",
   },
   {
     id: 2,
     name: "Blog: Why people dislike or gossip about you",
-    href: "/post/gossip-hurt",
+    href: "/post/why_people_gossip_about_you_10_24",
   },
 ];
 

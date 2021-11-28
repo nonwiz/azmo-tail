@@ -173,8 +173,8 @@ export default function Post({ post }) {
             <DiscussionEmbed
               shortname="azmo-1"
               config={{
-                url: `https://www.azmo.page${router.asPath}`,
-                identifier: `${post.category}-${post.title}`,
+                url: `https://www.azmo.page/posts/${router.query.id}`,
+                identifier: `${router.query.id}`,
                 title: post.title,
                 language: "en",
               }}

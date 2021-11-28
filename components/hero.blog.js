@@ -24,7 +24,7 @@ export default function BlogHero({ slides }) {
                       <hr className="w-4/5 mx-auto mt-1 border-2 md:mt-4 border-wgray-400 md:mx-1" />
                       <p className="my-2 text-base text-wgray-700">
                         {item.category} |
-                        <Link href={`post/${item.id}`}>
+                        <Link href={`posts/${item.id}`}>
                           <a> View Post </a>
                         </Link>
                       </p>
