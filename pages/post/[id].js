@@ -5,8 +5,11 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import QuoteHome from "../../components/quote.home";
 import HeroPostLayout from "../../components/hero.layout";
 import { formatDate } from "../../lib/format.js";
+import { DiscussionEmbed } from "disqus-react";
+import { useRouter } from "next/router";
 
 export default function Post({ post }) {
+  const router = useRouter();
   const detail = {
     title: post.title,
     content: (
@@ -163,6 +166,19 @@ export default function Post({ post }) {
                 )}
               </div>
             </div>
+          </div>
+        </section>
+        <section className="py-5 mx-5 md:mx-10 lg:mx-20">
+          <div className="container px-5 py-8 mx-auto text-base text-gray-500 rounded-lg shadow-xl sm:px-20 bg-wgray-100">
+            <DiscussionEmbed
+              shortname="azmo-1"
+              config={{
+                url: `https://www.azmo.page${router.asPath}`,
+                identifier: `${post.category}-${post.title}`,
+                title: post.title,
+                language: "en",
+              }}
+            />
           </div>
         </section>
       </div>
