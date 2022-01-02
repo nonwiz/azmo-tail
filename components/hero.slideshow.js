@@ -18,8 +18,6 @@ const content = (
 
 const slides = [
   { title: "AZMO CHERISH", content: content, img: images[0], alt: "" },
-  { title: "LET'S GROW TOGETHER", content: content, img: images[1], alt: "" },
-  { title: "LET'S GROW TOGETHER", content: content, img: images[2], alt: "" },
   { title: "LET'S GROW TOGETHER", content: content, img: images[3], alt: "" },
 ];
 
