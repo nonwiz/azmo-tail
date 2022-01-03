@@ -25,6 +25,7 @@ export default function Layout({ children, noContact }) {
         {" "}
         {children}{" "}
       </main>
+
       <FooterLayout />
     </>
   );
