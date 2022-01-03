@@ -46,6 +46,9 @@ export default function Home({ allPostsData }) {
       <QuoteHome />
       <GetToKnowHome />
       <RecentHome recent={recent} />
+      <div className="fixed bottom-0 right-0 rounded-full bg-rose-200 m-2">
+        <img src="/assets/new_year.png" className="transform -translate-y-4 w-16 md:w-24" />
+      </div>
     </Layout>
   );
 }
