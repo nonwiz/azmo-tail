@@ -4,6 +4,7 @@ content: "Hi friends, Are you feel alone now?"
 category: "Blog"
 subcategory: "Mental Blog"
 img: "/assets/blog/you_i_happy/img.png"
+meta: "/assets/blog/you_i_happy/img.png"
 note: ''
 date: "2022-01-18"
 ---
